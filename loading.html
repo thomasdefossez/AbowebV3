@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Transat Informatique</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/lib/budicon/budicon.css" rel="stylesheet" />
+    <link href="assets/lib/flaticons/solid/solid.css" rel="stylesheet" />
+    <link href="assets/lib/flaticons/stroke/stroke.css" rel="stylesheet" />
+    <link href="assets/lib/flaticons/social/social.css" rel="stylesheet" />
+    <link href="assets/lib/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="assets/lib/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="assets/css/style.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <header class="MainHeader">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="LeftSidebarToggleButton"><i></i></div>
+                    <div class="Company">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Transat</a>
+                        <ul class="dropdown-menu arrow">
+                            <li><a href="#">Pressmaker</a></li>
+                            <li><a href="#">Pressmaker</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <a class="navbar-brand hidden-xs" href="/">
+                        <img src="assets/img/AboWebLogo.svg" width="113" />
+                    </a>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="Lang">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span>Eng</span>
+                                <i class="caret"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><img src="assets/img/fr.jpg" /><span>FRE</span></a></li>
+                                <li><a href="#"><img src="assets/img/en.jpg" /><span>ENG</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="Orders">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="flaticon solid cart-3"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="Subscription">
+                                    <a href="#">
+                                        <span>14</span>
+                                        Abonnements
+                                    </a>
+                                </li>
+                                <li class="Renewal">
+                                    <a href="#">
+                                        <span>68</span>
+                                        Reabonnements
+                                    </a>
+                                </li>
+                                <li class="AddressChange">
+                                    <a href="#">
+                                        <span>6</span>
+                                        Changements D’adresse
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Notifications new">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="flaticon solid bell-2"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-dont-close">
+                                <ul>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #323</a> has been delivered this Tuesday.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #322</a> has been delivered this Tuesday. Now its going to Nebraska on shipping details processing. After that will be returned to Chicago.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #321</a> has been delivered.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #321</a> has been delivered this Tuesday.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #321</a> has been delivered this Tuesday.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #321</a> has been delivered this Tuesday.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="SeeAllNotifications">
+                                    Voir Tout <i class="budicon interface-arrowright5"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="User">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span>Thomas D.</span>
+                                <i class="caret"></i>
+                                <div class="img" style="background-image: url('assets/img/dummy/01.jpg');"></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="progres">
+                                    <span>Profil</span>
+                                    <p>70%</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%;"></div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="flaticon solid user-2"></i>My Profile</a></li>
+                                <li><a href="#"><i class="flaticon solid settings-2"></i>Settings</a></li>
+                                <li><a href="#"><i class="flaticon stroke upload-1 r90"></i>Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="MainContent">
+
+        <div class="loader active">
+            <div class="content">
+                <div class="spinner-box">
+                    <div class="spinner" style="background-image:url('assets/img/loader.jpg');"></div>
+                    <img class="logo" src="assets/img/LogoIconWhite.jpg" alt="" />
+                </div>
+                <h1>Loading new page ...</h1>
+                <p>Lorem ipsum dolor sit amet, praesent quisque, nibh curabitur felis sociis erat, dis dui, fusce egestas, posuere amet ultricies vitae diam varius.</p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="assets/lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/lib/slimscroll/jquery.slimscroll.js"></script>
+    <script src="assets/lib/highcharts/highcharts.js"></script>
+    <script src="assets/lib/resp-tables/responsive-tables.js"></script>
+    <script src="assets/lib/daterangepicker/moment.js"></script>
+    <script src="assets/lib/daterangepicker/daterangepicker.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+</html>
