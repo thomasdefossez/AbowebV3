@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-    <title>Transat Informatique</title>
+    <title>AboWebV3</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -190,35 +190,57 @@
                         <a href="#"><i class="flaticon solid newspaper-1"></i><span>Abonnements</span></a>
                         <ul>
                             <li><a href="abonnements.html">Liste des abonnements</a></li>
-                  
+                            <li><a href="#">Importer des abonnements</a></li>
+                            <li class="selected"><a href="abonnements-new.html">Créer un abonnement</a></li>
+                            <li><a href="abonnements-rapide.html">Créer un abo. rapide</a></li>
+                            <li><a href="#">Créer un reabo rapide</a></li>
+                            <li><a href="abonnements-serie.html">Créer un reabo en série</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#"><i class="flaticon solid airplane-1"></i><span>Livraisons</span></a>
                         <ul>
                             <li><a href="livraison.html">Livraison du titre</a></li>
-     
+                            <li><a href="livraison-reassorts.html">Livraison des réassorts</a></li>
+                            <li><a href="livraison-articles.html">Liv. des articles libres</a></li>
+                            <li><a href="#">Paramétrage routeur</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#"><i class="flaticon solid refresh-1"></i><span>Relance</span></a>
                         <ul>
                             <li><a href="relance-abo1.html">Relance des abo</a></li>
-                     
+                            <li><a href="#">Relance des tiers</a></li>
+                            <li><a href="relance-analyse.html">Analyse des relances</a></li>
+                            <li><a href="relance-emails.html">Emails de relance</a></li>
+                            <li><a href="relance-type.html">Lettres type de relance</a></li>
+                            <li><a href="relance-lettre.html">Lettres de relance tiers</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#"><i class="flaticon solid money-2"></i><span>Facturation</span><b>6</b></a>
                         <ul>
                             <li><a href="#">Listes des factures</a></li>
-                       
+                            <li><a href="#">Gestion des règlements</a></li>
+                            <li><a href="facturation-attente.html">Abo non facturés</a></li>
+                            <li><a href="facturation-journal.html">Etats comptables</a></li>
+                            <li><a href="#">Relances des impayés</a></li>
+                            <li><a href="#">Lettre type de relance</a></li>
+                            <li><a href="facturation-comptabilite.html">Transfert en comptabilité</a></li>
+                            <li><a href="facturation-deverouillage.html">Déverouillage facturation</a></li>
+                            <li><a href="facturation-prelevement.html">Fichier de prélèvements</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#"><i class="flaticon solid clipboard-4"></i><span>Resultat</span></a>
                         <ul>
                             <li><a href="resultat-diffusion.html">Résultat de diffusion</a></li>
-                     
+                            <li><a href="resultat-ventes.html">Résultat de ventes</a></li>
+                            <li><a href="resultat-abonnes.html">Dette abonnés</a></li>
+                            <li><a href="resultat-reabonneent.html">Taux de réabonnement</a></li>
+                            <li><a href="#">CA et prix moyen par N°</a></li>
+                            <li><a href="resultat-repartition.html">Répartition du CA</a></li>
+                            <li><a href="#">Reporting</a></li>
                         </ul>
                     </li>
                     <li>
@@ -231,7 +253,18 @@
                         <a href="#"><i class="flaticon solid journal-2"></i><span>Administration</span></a>
                         <ul>
                             <li><a href="administration-titres.html">Titres</a></li>
-           
+                            <li><a href="administration-calendrier.html">Calendrier</a></li>
+                            <li><a href="administration-tarifs-abo.html">Tarifs d'abo</a></li>
+                            <li><a href="administration-formules-abo.html">Formules d'abo</a></li>
+                            <li><a href="administration-tarifs-article.html">Tarifs d'articles libres</a></li>
+                            <li><a href="administration-stocks.html">Stocks</a></li>
+                            <li><a href="#">Sociétés</a></li>
+                            <li><a href="#">Compteurs</a></li>
+                            <li><a href="administration-code-selection.html">Codes de sélection</a></li>
+                            <li><a href="administration-aide-saisie.html">Aide à la saisie</a></li>
+                            <li><a href="administration-code-tva.html">Codes TVA</a></li>
+                            <li><a href="administration-pays-etranger.html">Pays étranger</a></li>
+                            <li><a href="administration-familles.html">Familles de fraise port</a></li>
                         </ul>
                     </li>
                     <li class="space"></li>
@@ -356,7 +389,7 @@
 
                     <div class="row mb20">
                         <div class="col-sm-10 xs-text-center">
-                            <h1>AJOUTER UN ABONNEMENT</h1>
+                            <h1>CRÉER UN ABONNEMENT</h1>
                         </div>
                         <div class="col-sm-2 text-right xs-text-center xs-pt20">
                             <div class="tool-box down">
@@ -490,7 +523,7 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- onglet Abonnement -->
+                    <!--ONGLET ABONNEMENT -->
                     <div class="TabPane Abonnement active" data-tab="Abonnement" data-tabgroup="CreerAbonnament">
                         <div class="row">
                             <div class="col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-1">
@@ -637,6 +670,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Bloc Montant 
                                     <div class="table blue-lighter-bg br3">
                                         <div class="cell-t-50 br bt"></div>
                                         <div class="cell-t-50 bt">
@@ -663,12 +697,41 @@
                                             </div>
                                         </div>
                                     </div>
+                                                 FIN   -->
                                 </div>
 
                             </div>
 
                             <!--Bloc Option -->
                             <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                                 <!--Bloc Montant -->
+                                <div class="WhiteBox">
+                                       
+                                        <div class="cell-t-50 bt">
+                                            <div class="table white-bg fs16 gray br3">
+                                                <div class="table-row">
+                                                    <div class="cell-m pt15 pr0 pb15 pl20 bb">Montat HT</div>
+                                                    <div class="cell-m pt15 pr20 pb15 pl0 bb text-right">24,39€</div>
+                                                </div>
+                                                <div class="table-row">
+                                                    <div class="cell-m pt15 pr0 pb15 pl20 bb">TVA</div>
+                                                    <div class="cell-m pt15 pr20 pb15 pl0 bb text-right">2,10%</div>
+                                                </div>
+                                                <div class="table-row">
+                                                    <div class="cell-m pl20 bb">Remise</div>
+                                                    <div class="cell-m pt8 pr20 pb8 pl0 bb text-right">
+                                                        <input type="text" class="small w50 ibm text-center" />
+                                                        <span class="ibm ml5">%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="table-row">
+                                                    <div class="cell-m pt15 pr0 pb15 pl20 gray-light-bg white">MONTANT TTC</div>
+                                                    <div class="cell-m br3br pt15 pr20 pb15 pl0 gray-light-bg white fs20 bold text-right">24,90€</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Bloc Option -->
                                 <div class="WhiteBox">
                                     <div class="header">
                                         <h5>Options</h5>
@@ -704,6 +767,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <!-- Bloc Information -->
                                 <div class="WhiteBox">
                                     <div class="header">
@@ -820,126 +884,25 @@
                             </div>
                                 <!--Fin Test -->
                     </div>
-                   
-                    <!-- FIN Onglet Abonnement -->
-
+                    <!--FIN ONGLET ABONNEMENT -->
+                    <!-- ONGLET CS -->
                     <div class="TabPane Codes" data-tab="Codes" data-tabgroup="CreerAbonnament">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-1">
-                                <div class="WhiteBox">
-                                    <div class="p40 pr80">
-                                   
-                                        <div class="row mb10">
-                                            <div class="col-sm-4 pt13 gray text-right xs-text-left">
-                                                CS 1:
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <select>
-                                                    <option>Lonley Planet</option>
-                                                    <option>Marie Claire</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                           <div class="row mb10">
-                                            <div class="col-sm-4 pt13 gray text-right xs-text-left">
-                                                CS2:
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <select>
-                                                    <option>Lonley Planet</option>
-                                                    <option>Marie Claire</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                           <div class="row mb10">
-                                            <div class="col-sm-4 pt13 gray text-right xs-text-left">
-                                                CS3
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <select>
-                                                    <option>Lonley Planet</option>
-                                                    <option>Marie Claire</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                                 <div class="row mb10">
-                                            <div class="col-sm-4 pt13 gray text-right xs-text-left">
-                                                CS3
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <select>
-                                                    <option>Lonley Planet</option>
-                                                    <option>Marie Claire</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                                 <div class="row mb10">
-                                            <div class="col-sm-4 pt13 gray text-right xs-text-left">
-                                                CS3
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <select>
-                                                    <option>Lonley Planet</option>
-                                                    <option>Marie Claire</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb20 tu fs16">Critere de selection</div>
-                                        <div class="row mb40">
-                                            <div class="col-sm-4 pt13 gray">
-                                                Mode de paiement
-                                            </div>
-                                            <div class="col-sm-7">
-                                                <select>
-                                                    <option>Tous</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="btn gray-light small2">Calculer</a>
-                                    </div>
-                                        </div>
-                                    
-                                     
-                                       
-                                     
-                                    </div>
-                                   
-                                </div>
-
-                            </div>
-
-                            <!--Bloc Option -->
-                            <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
-                                <div class="WhiteBox">
-                                    <div class="header">
-                                        <h5>Options</h5>
-                                    </div>
-                                    <div class="p40 pt0">
-                                    
-                                    </div>
-                                </div>
-                                <!-- Bloc Information -->
-                                <div class="WhiteBox">
-                                    <div class="header">
-                                        <h5>Informations</h5>
-                                    </div>
-                                 
-                                </div>
-                            </div>
-                            </div>
-                        
+                        Codes de selection Tab Content Here...
                     </div>
-
+                     <!--FIN ONGLET CS -->
+                     <!-- ONGLET REASSORT -->
                     <div class="TabPane Reassorts" data-tab="Reassorts" data-tabgroup="CreerAbonnament">
                         Reassorts Tab Content Here...
                     </div>
-
+                    <!--FIN ONGLET REASSORT -->
                 </div>
             </div>
+            <!--BARRE FONCTION -->
             <div class="footer">
                 <div class="container">
                     <div class="text-right">
                         <a href="#" class="btn gray-lighter fw400 condensed mr25 xs-small xs-mr5">Cancel</a>
-                        <a href="facture.html" class="btn icon-right condensed mr10 xs-small xs-mr5">Facturer<i class="flaticon stroke right-4 hidden-xs"></i></a>
+                        <a href="#" class="btn icon-right condensed mr10 xs-small xs-mr5">Facturer<i class="flaticon stroke right-4 hidden-xs"></i></a>
                         <a href="#" class="btn green condensed mr10 xs-small xs-mr5">Valider et recalculer</a>
                         <a href="#" class="btn green icon condensed xs-small xs-mr5"><i class="flaticon stroke checkmark-1 hidden-xs"></i>Valider</a>
                         <div class="separator ml15 mr15 hidden-xs"></div>
@@ -947,9 +910,10 @@
                     </div>
                 </div>
             </div>
+            <!--FIN BARRE FONCTION  -->
         </div>
 
-        <!--START of RightSidebar-->
+        <!--START of RightSidebar
         <a href="#" class="RightSidebarToggleButton"></a>
         <div class="RightSidebar">
             <div class="header">
@@ -997,7 +961,119 @@
                                 </div>
                                 <a href="#" class="remove" title="Remove"></a>
                             </li>
-          
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Envoyer Simon Loalrtfd pour abo</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="tel:0169806844" class="phone">01 69 80 68 44</a>
+                                        <p>Some other details text...</p>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove" title="Remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Rappeler Simon Lorder pour abo</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="tel:0169806844" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Penser réglement Paul (Prestz) pour vpc</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Rappeler John (Transat) suite au chéque reçu la semaine derniere</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Contacter Valerie (Prestz) pour reglement</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Rappeler Valerie (Prestz) pour chéque reçu.</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Joindre Valerie (Prestz) pour abo.</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
                             <li>
                                 <div class="status">
                                     <input type="checkbox" class="round" />
@@ -1014,9 +1090,118 @@
                                 </div>
                                 <a href="#" class="remove"></a>
                             </li>
-           
-                            
-                   
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Envoyer Simon Loalrtfd pour abo</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Rappeler Simon Lorder pour abo</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Penser réglement Paul (Prestz) pour vpc</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Rappeler John (Transat) suite au chéque reçu la semaine derniere</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Contacter Valerie (Prestz) pour reglement</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Rappeler Valerie (Prestz) pour chéque reçu.</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Joindre Valerie (Prestz) pour abo.</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
                         </ul>
                     </div>
                     <div class="TabPane Older" data-tab="Older" data-tabgroup="RightSidebarTasks">
@@ -1037,8 +1222,119 @@
                                 </div>
                                 <a href="#" class="remove"></a>
                             </li>
-                       
-                  
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Rappeler John (Transat) suite au chéque reçu la semaine derniere</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    01.09.2015 14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Joindre Thomas (Prestz) pour abo</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="tel:0169806844" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    01.09.2015 14:45
+                                </div>
+                                <a href="#" class="remove" title="Remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Envoyer Simon Loalrtfd pour abo</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="tel:0169806844" class="phone">01 69 80 68 44</a>
+                                        <p>Some other details text...</p>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    01.01.2015 14:45
+                                </div>
+                                <a href="#" class="remove" title="Remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Rappeler Valerie (Prestz) pour chéque reçu.</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    01.02.2015 14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Joindre Valerie (Prestz) pour abo.</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    01.03.2015 14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Rappeler Simon Lorder pour abo</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="tel:0169806844" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    01.04.2015 14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
+                            <li>
+                                <div class="status">
+                                    <input type="checkbox" class="round" />
+                                </div>
+                                <div class="information">
+                                    <p class="title">Penser réglement Paul (Prestz) pour vpc</p>
+                                    <div class="details">
+                                        <a href="#" class="name">Thomas Defossez</a>
+                                        <a href="#" class="phone">01 69 80 68 44</a>
+                                    </div>
+                                </div>
+                                <div class="datetime">
+                                    01.05.2015 14:45
+                                </div>
+                                <a href="#" class="remove"></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1052,14 +1348,98 @@
                                 01/11/2015 14:45
                             </div>
                         </li>
-   
-         
+                        <li>
+                            <div class="information">
+                                Demande de création du fichier SDD de Média Plongée du 04/04/2012 par ANTHONY.
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Livraison des AL de Média et Nature Active du 01/01/2013 au 02/09/2013 par PHILI
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Livraison des AL de Média Plongée du 01/01/2013 au 02/09/2013 par PHILIPPE MELOT
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Livraison des AL de Média et Nature Active du 01/01/2013 au 02/09/2013 par PHILI
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Envoi emailing par MARC
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Envoi emailing par MARC
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Livraison des AL de Histoire & Collections du 01/01/2013 au 30/08/2013 par VPC.
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="TabPane News" data-tab="News" data-tabgroup="RightSidebar">
                     <ul class="NewsList">
-                     
-    
+                        <li>
+                            <div class="information">
+                                Résultats de Diffusion - Nombre exemplaire Prospects. <a href="#">Read more</a>
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Import de réabonnements sur une sélection de client
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Abonnement date à date - Résultats, relances...
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Suppression de l'option Importer RIB
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
                         <li>
                             <div class="information">
                                 Résultats de diffusion - Grâce copies
@@ -1068,7 +1448,70 @@
                                 01/11/2015 14:45
                             </div>
                         </li>
-              
+                        <li>
+                            <div class="information">
+                                Impossible d'imprimer une facture avec coupon quand il y a une tva à 1.05 % <a href="#">Read more</a>
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Pouvoir supprimer plusieurs lignes de facture en même temps <a href="#">Read more</a>
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Abonnement date à date (contacter notre service assistance pour plus de précision)
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Web Services] Problème si pas de numéro en cours pour la liste des abonnements
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Impression des lettres types de factures impayées : affichage décimales
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Résultats de diffusion - Grâce copies
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Impression des lettres types de factures impayées : affichage décimales
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
+                        <li>
+                            <div class="information">
+                                Résultats de diffusion - Grâce copies
+                            </div>
+                            <div class="datetime">
+                                01/11/2015 14:45
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -1089,6 +1532,66 @@
     </main>
 
     <div class="PopUps">
+         <!--POP TIERS -->
+        <div popup="TiersPayant">
+            <div class="popup-main-header">
+                <h4>Tiers payant</h4>
+                <a href="#" class="close" close-popup=""></a>
+            </div>
+            <div class="popup-main-content p30 pb15">
+                <div class="row mb20">
+                    <div class="col-sm-4">
+                        <span class="ibm pb5">Code</span><input type="text" class="ibm xs-mb10" />
+                    </div>
+                    <div class="col-sm-6">
+                        <span class="ibm pb5">Nom</span><input type="text" class="ibm" />
+                    </div>
+                    <div class="col-sm-2 pt20">
+                        <a href="#" class="btn small condensed2">Lancer</a>
+                    </div>
+                </div>
+                <table class="style2">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Client</th>
+                            <th>CP-Ville</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">5883</a></td>
+                            <td><a href="#">Loreum ispum dolor imset</a></td>
+                            <td><a href="#">75000 PARIS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">5883</a></td>
+                            <td><a href="#">Loreum ispum dolor imset</a></td>
+                            <td><a href="#">75000 PARIS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">5883</a></td>
+                            <td><a href="#">Loreum ispum dolor imset</a></td>
+                            <td><a href="#">75000 PARIS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">5883</a></td>
+                            <td><a href="#">Loreum ispum dolor imset</a></td>
+                            <td><a href="#">75000 PARIS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">5883</a></td>
+                            <td><a href="#">Loreum ispum dolor imset</a></td>
+                            <td><a href="#">75000 PARIS</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-right pt5">
+                    <a href="#" class="btn smaller white-grey condensed2">Tout voir</a>
+                </div>
+            </div>
+        </div>
+        <!--FIN POPUP-->
         <div popup="CreateNewTask">
             <form>
                 <div class="popup-main-header">
@@ -1251,66 +1754,6 @@
                 </div>
             </form>
         </div>
-        <!--POP TIERS -->
-        <div popup="TiersPayant">
-            <div class="popup-main-header">
-                <h4>Tiers payant</h4>
-                <a href="#" class="close" close-popup=""></a>
-            </div>
-            <div class="popup-main-content p30 pb15">
-                <div class="row mb20">
-                    <div class="col-sm-4">
-                        <span class="ibm pb5">Code</span><input type="text" class="ibm xs-mb10" />
-                    </div>
-                    <div class="col-sm-6">
-                        <span class="ibm pb5">Nom</span><input type="text" class="ibm" />
-                    </div>
-                    <div class="col-sm-2 pt20">
-                        <a href="#" class="btn small condensed2">Lancer</a>
-                    </div>
-                </div>
-                <table class="style2">
-                    <thead>
-                        <tr>
-                            <th>Code</th>
-                            <th>Client</th>
-                            <th>CP-Ville</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="#">5883</a></td>
-                            <td><a href="#">Loreum ispum dolor imset</a></td>
-                            <td><a href="#">75000 PARIS</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">5883</a></td>
-                            <td><a href="#">Loreum ispum dolor imset</a></td>
-                            <td><a href="#">75000 PARIS</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">5883</a></td>
-                            <td><a href="#">Loreum ispum dolor imset</a></td>
-                            <td><a href="#">75000 PARIS</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">5883</a></td>
-                            <td><a href="#">Loreum ispum dolor imset</a></td>
-                            <td><a href="#">75000 PARIS</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">5883</a></td>
-                            <td><a href="#">Loreum ispum dolor imset</a></td>
-                            <td><a href="#">75000 PARIS</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="text-right pt5">
-                    <a href="#" class="btn smaller white-grey condensed2">Tout voir</a>
-                </div>
-            </div>
-        </div>
-        <!--FIN POPUP-->
         <div popup="CreateNewSubscription">
             <form>
                 <div class="popup-main-header">
