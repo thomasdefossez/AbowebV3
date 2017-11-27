@@ -44,7 +44,7 @@
                         <img src="assets/img/AboWebLogo.svg" width="113" />
                     </a>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="Lang">
+                        <li class="Lang"> 
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <span>Base</span>
                                 <i class="caret"></i>
@@ -461,7 +461,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- Blocs Small Metrix 1 -->
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="WhiteBox">
@@ -490,7 +490,88 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- End Blocs Small Metrix 1 -->
+                    <!-- Blocs Small Metrix 2-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="WhiteBox">
+                                <h4 class="pl30 pt20 pb20 tu">MRR<i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i></h4>
+                                <a href="#" class="big-block-link blue"> 
+                                    <h3>2,145 €</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="WhiteBox">
+                                <div class="Chart1"></div>
+                                 <h4 class="pl30 pt20 pb20 tu">CUSTOMERS<i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i><h4 class="pl30 pt20 pb20 tu">15879</h4></h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blocs Small Metrix V2 -->
+                    <!-- Blocs Small Metrix 3-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="WhiteBox">
+                                <h4 class="pl30 pt20 pb20 tu">AVERAGE REVENUE PER ACCOUNT <i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i></h4>
+                                <a href="#" class="big-block-link gray"> 
+                                    <h3>345 €</h3>                                    
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="WhiteBox">
+                                 <h4 class="pl30 pt20 pb20 tu">ANNUAL RUN RATE<i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i></h4>
+                                <a href="#" class="big-block-link blue"> 
+                                    <h3>2,145</h3>
+                                    <h4>Abonnements</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blocs Small Metrix V3 -->
+                    <!-- Blocs Small Metrix 4-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="WhiteBox">
+                                <h4 class="pl30 pt20 pb20 tu">CUSTOMER LIFE TIME VALUE<i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i></h4>
+                                <a href="#" class="big-block-link blue"> 
+                                    <h3>2,145</h3>
+                                    <h4>Abonnements</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="WhiteBox">
+                                 <h4 class="pl30 pt20 pb20 tu">GROSS MRR CHRUN RATE<i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i></h4>
+                                <a href="#" class="big-block-link gray"> 
+                                    <h3>2,145</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blocs Small Metrix V4 -->
+                    <!-- Blocs Small Metrix 4-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="WhiteBox">
+                                 <h4 class="pl30 pt20 pb20 tu">ACUSTOMER CHRUN RATE<i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i></h4>
+                                <a href="#" class="big-block-link gray"> 
+                                    <h3>2,145</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="WhiteBox">
+                                 <h4 class="pl30 pt20 pb20 tu">CUSTOMER CHURN RATE<i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i></h4>
+                                <a href="#" class="big-block-link blue"> 
+                                    <h3>12 %</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blocs Small Metrix V4 -->
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="TableBox mb20">
@@ -2064,6 +2145,34 @@
                 }]
             });
         });
+    </script>
+     <script>
+    //Charts dummy data
+    $(function () {
+        $('.Chart1').highcharts({
+            chart: {
+                type: 'column',
+                width: $('.Chart1').width(),
+                height: $('.Chart1').height()
+            },
+            title: { text: null },
+            legend: { enabled: false },
+            xAxis: {
+                categories: ['Relance 0', 'Relance 1', 'Relance 2', 'Relance 3', 'Relance 4', 'Relance 5'],
+                tickWidth: 0
+            },
+            yAxis: {
+                title: { text: null },
+                gridLineColor: '#e8ebef',
+                endOnTick: false
+            },
+            series: [{
+                name: 'Data',
+                data: [200, 375, 250, 150, 75, 125],
+                color: '#33b1ed'
+            }]
+        });
+    });
     </script>
 
 </body>
