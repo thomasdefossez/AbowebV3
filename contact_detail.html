@@ -2478,20 +2478,47 @@
         <div popup="CreateNewContact">
             <form>
                 <div class="popup-main-header">
-                    <h4>+ Creation du un Contact</h4>
+                    <h4>+ Modification Contact</h4>
                     <a href="#" class="close" close-popup=""></a>
                 </div>
                 <div class="popup-main-content pl30 xs-pl20 pt20 pr30 pb20">
+                    <div class="col-sm-12 col-md-6 pb10">
+                                                    <div class="table">
+                                                        <div class="cell-m-40 gray fs16 pr10">
+                                                            Début 
+                                                        </div>
+                                                        <div class="cell-m-60">
+                                                            <div class="input-icon small right">
+                                                                <input class="small round condensed fs13" data-type="date" type="text" value="01/12/2016" />
+                                                                <i class="flaticon stroke calendar-3 gray-light fs13"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 pb10">
+                                                    <div class="table">
+                                                        <div class="cell-m-40 gray fs16 pr10">
+                                                            Fin 
+                                                        </div>
+                                                        <div class="cell-m-60">
+                                                            <div class="input-icon small right">
+                                                                <input class="small round condensed fs13" data-type="date" type="text" value="01/12/2016" />
+                                                                <i class="flaticon stroke calendar-3 gray-light fs13"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                     <div class="table pb20">
                         <div class="cell-t pr20 pt15 xs-pr10">
                             <i class="flaticon solid user-1 gray-light fs16"></i>
                         </div>
                         <div class="cell-t-100">
                             <select class="sl">
-                                <option value="0">Client</option>
-                                <option value="1">Tiers</option>
-                                <option value="2">Bénéficiaire</option>
-                                <option value="3">Prospect</option>
+                                <option value="" selected disabled style="display:none">Type d'adresse</option>
+                                <option value="0">Livraison</option>
+                                <option value="1">Facturation</option>
+                                <option value="2">Relance</option>
+                               
                             </select>
                             <select class="sl">
                                 <option value="" selected disabled style="display:none">Civilité</option>
@@ -2502,6 +2529,10 @@
                                 <option value="Sans">Sans</option>
                                 <option value="SARL">SARL</option>
                                 <option value=" "> </option>
+                            </select>
+                            <select class="sl">
+                                <option value="" selected disabled style="display:none">Titre</option>
+                                <option value="MME">Humanite</option>
                             </select>
                             <input type="text" class="sl w-50 l xs-w100p xs-fn xs-m0" placeholder="Nom" />
                             <input type="text" class="sl w-50 r xs-w100p xs-m0" placeholder="Prénom" />
@@ -2536,41 +2567,13 @@
                         </div>
                         <div class="cell-t-100">
                             <input type="text" class="sl" placeholder="Téléphone" />
-                            <input type="text" class="sl" placeholder="Origine Contact" />
                         </div>
                     </div>
-                    <div class="table">
-                        <div class="cell-t pr20 pt15 xs-pr10">
-                            <i class="flaticon solid mail-2 gray-light fs16"></i>
-                        </div>
-                        <div class="cell-t-100">
-                            <input type="text" class="sl" placeholder="Email" />
-                        </div>
-                    </div>
-                    <div class="table">
-                        <div class="cell-t pr20 pt15 xs-pr10">
-                            <i class="flaticon solid suitcase-1 gray-light fs16"></i>
-                        </div>
-                        <div class="cell-t-100">
-                            <input type="text" class="sl" placeholder="Societe" />
-                        </div>
-                    </div>
-                </div>
+                                    </div>
                 <div class="popup-main-footer">
-                    <div class="pull-left">
-                        <div class="tool-box up">
-                            <a href="#" class="btn round white-blue-inv small">
-                                <i class="flaticon stroke plus-1"></i>
-                            </a>
-                            <ul>
-                                <li><a href="#">Creer Formule</a></li>
-                                <li><a href="#">Imprimer Clients du Tiers</a></li>
-                                <li><a href="#">Imprimer fiche</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                     <button close-popup="" type="submit" class="btn green icon condensed mr10 xs-mb5"><i class="flaticon stroke checkmark-1"></i>Valider</button>
-                    <button close-popup="" class="btn gray-lighter condensed">Creer un abonnement</button>
+                    
                 </div>
             </form>
         </div>
