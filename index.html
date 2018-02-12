@@ -44,22 +44,6 @@
                         <img src="assets/img/AboWebLogo.svg" width="113" />
                     </a>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="Lang"> 
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span>Base</span>
-                                <i class="caret"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#"><span>Le Point</span></a></li>
-                                <li><a href="#"><span>NOuvelle Vie Ouvriere</span></a></li>
-                                <li><a href="#"><span>THermomix</span></a></li>
-                                <li><a href="#"><span>Le Point</span></a></li>
-                                <li><a href="#"><span>Le Point</span></a></li>
-                                <li><a href="#"><span>Le Point</span></a></li>
-                                <li><a href="#"><span>Le Point</span></a></li>
-                                <li><a href="#"><span>Le Point</span></a></li>
-                            </ul>
-                        </li>
                         <li class="Lang">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <span>Eng</span>
@@ -301,7 +285,7 @@
                 <div class="container">
 
                     <div class="row mb20">
-                        <div class="col-sm-10">
+                        <div class="col-md-9">
                             <div class="SearchWithFilters">
                                 <div class="search">
                                     <input type="text" name="search" placeholder="Search Aboweb" />
@@ -396,184 +380,287 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-2">
-                            <div class="text-right xs-text-center xs-pt20">
+                        <div class="col-md-3">
+                            <div class="text-right sm-text-center xs-text-center sm-pt20 xs-pt20">
                                 <a open-popup="CreateNewContact" href="#" class="btn round gray-light mr10" title="Add Contact"><i class="flaticon solid add-user-1"></i></a>
-                                <a open-popup="CreateNewSubscription" href="#" class="btn round gray-light" title="Create subscription"><i class="flaticon solid document-2"></i></a>
+                                <a open-popup="CreateNewSubscription" href="#" class="btn round green mr10" title="Create subscription"><i class="flaticon solid document-2"></i></a>
+                                <a href="#" class="btn white"><i class="flaticon solid refresh-1"></i> Refresh</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="WhiteBox LineChart">
-                        <div class="row header">
-                            <div class="col-sm-4">
-                                <div class="chart-type">
-                                    <a class="chart-type-btn" href="#" data-toggle-active="TopLineChartType">Tableu De Bord</a>
-                                    <div class="chart-type-list mouseleave-close" data-toggle-active="TopLineChartType">
-                                        <ul>
-                                            <li><a href="#" data-tab="Chart1" data-tabgroup="TopLineCharts" data-toggle-active="TopLineChartType">Tableu De Bord 1</a></li>
-                                            <li><a href="#" data-tab="Chart2" data-tabgroup="TopLineCharts" data-toggle-active="TopLineChartType">Tableu De Bord 2</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 text-right">
-                                <div class="TabPane active" data-tab="Chart1" data-tabgroup="TopLineCharts">
-                                    <ul class="chart-legend">
-                                        <li><i style="background-color:#dae2e7"></i>Subsribers</li>
-                                        <li><i style="background-color:#33b1ed"></i>Subsribers</li>
-                                    </ul>
-                                </div>
-                                <div class="TabPane" data-tab="Chart2" data-tabgroup="TopLineCharts">
-                                    <ul class="chart-legend">
-                                        <li><i style="background-color:#1474a2"></i>Subsribers</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 text-right">
-                                <div class="date-interval">
-                                    <input type="text" data-type="daterangepicker" value="01/09/2015 - 10/09/2015" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="TabPane active" data-tab="Chart1" data-tabgroup="TopLineCharts">
-                                    <div class="Chart1"></div>
-                                </div>
-                                <div class="TabPane" data-tab="Chart2" data-tabgroup="TopLineCharts">
-                                    <div class="Chart2"></div>
-                                    <div class="total">
-                                        <div class="total-box">
-                                            <h3>Factures</h3>
-                                            <p>5</p>
-                                        </div>
-                                        <div class="total-box">
-                                            <h3>Abonnements</h3>
-                                            <p>12</p>
-                                        </div>
-                                        <div class="total-box">
-                                            <h3>Nouveaux clients</h3>
-                                            <p>32</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Blocs Small Metrix 1 -->
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-md-6">
+                            <div class="WhiteBox sm-mb80">
+                                <div class="WhiteBox-Head">
+                                    <div class="col-sm-6">
+                                        <div class="chart-type">
+                                            <a class="chart-type-btn" href="#" data-toggle-active="TopLineChartType">Tableu De Bord</a>
+                                            <div class="chart-type-list mouseleave-close" data-toggle-active="TopLineChartType">
+                                                <ul>
+                                                    <li><a href="#" data-tab="Chart1" data-tabgroup="TopLineCharts" data-toggle-active="TopLineChartType">Tableu De Bord 1</a></li>
+                                                    <li><a href="#" data-tab="Chart2" data-tabgroup="TopLineCharts" data-toggle-active="TopLineChartType">Tableu De Bord 2</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="TabPane active" data-tab="Chart1" data-tabgroup="TopLineCharts">
+                                            <ul class="chart-legend">
+                                                <li><i style="background-color:#96c93c"></i>Subsribers</li>
+                                                <li><i style="background-color:#33b1ed"></i>Subsribers</li>
+                                            </ul>
+                                        </div>
+                                        <div class="TabPane" data-tab="Chart2" data-tabgroup="TopLineCharts">
+                                            <ul class="chart-legend">
+                                                <li><i style="background-color:#ec8a68"></i>Subsribers</li>
+                                                <li><i style="background-color:#9c80df"></i>Subsribers</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="date-interval">
+                                            <input type="text" data-type="daterangepicker" value="01/09/2015 - 10/09/2015" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="WhiteBox-Body">
+                                    <div class="TabPane active" data-tab="Chart1" data-tabgroup="TopLineCharts">
+                                        <div class="Chart1"></div>
+                                    </div>
+                                    <div class="TabPane" data-tab="Chart2" data-tabgroup="TopLineCharts">
+                                        <div class="Chart2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
                             <div class="WhiteBox">
-                                <h4 class="pl30 pt20 pb20 tu">AboShop Orders</h4>
-                                <a href="#" class="big-block-link blue">
-                                    <i class="left-icon budicon user-singleadd"></i>
+                                <h4 class="pl30 pt20 pb20">AboShop Orders</h4>
+                                <a href="#" class="block-link colorBlue">
+                                    <i class="budicon user-singleadd"></i>
                                     <h3>2,145</h3>
-                                    <h4>Abonnements</h4>
+                                    <h4 class="tu">Abonnements</h4>
                                 </a>
-                                <a href="#" class="big-block-link green">
-                                    <i class="left-icon budicon interface-plusadd"></i>
+                                <a href="#" class="block-link colorGreen">
+                                    <i class="budicon interface-plusadd"></i>
                                     <h3>161</h3>
-                                    <h4>Réabonnements</h4>
+                                    <h4 class="tu">Réabonnements</h4>
                                 </a>
-                                <a href="#" class="big-block-link gray">
-                                    <i class="left-icon budicon document-bookpaper2"></i>
+                                <a href="#" class="block-link colorBlueDarker">
+                                    <i class="budicon document-bookpaper2"></i>
                                     <h3>54</h3>
-                                    <h4>Changements d'adresse</h4>
+                                    <h4 class="tu">Changements d'adresse</h4>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="WhiteBox">
-                                <h4 class="pl30 pt20 pb20 tu">Reparition C.A.</h4>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="WhiteBox mobile-center">
+                                <h3 class="pl30 pt20 pb10">Reparition C.A.</h3>
                                 <div class="Chart3"></div>
                             </div>
                         </div>
                     </div>
-                    <!-- End Blocs Small Metrix 1 -->
-                    <!-- Blocs Small Metrix 2-->
-                    <div class="row">
-                        <div class="col-sm-6">
+
+                    <div class="row MmrCharts">
+                        <div class="col-md-4">
                             <div class="WhiteBox">
-                                <h4 class="pl30 pt20 pb20 tu">MRR<i class="tip flaticon solid question-2 gray ml5 mr10" title="Monthly Recurring Revenue"></i></h4>
-                                <a href="#" class="big-block-link blue"> 
-                                    <h3>82 €</h3>
-                                </a>
+                                <div class="chartHeader">
+                                    <div class="chart-name">
+                                        <h3>MRR</h3>
+                                    </div>
+                                    <div class="chart-data">
+                                        <h3>€13.33</h3>
+                                        <span>0% <br /> Last 30 days</span>
+                                    </div>
+                                </div>
+                                <div class="chartBody">
+                                    <div class="chartbox Chart4"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-md-4">
                             <div class="WhiteBox">
-                                <h4 class="pl30 pt20 pb20 tu">Nombre de clients Actifs<i class="tip flaticon solid question-2 gray ml5 mr10" title="Ayant un abonnement dans l'année"></i></h4>
-                                <a href="#" class="big-block-link blue"> 
-                                    <h3>237 423</h3>
-                                </a>
+                                <div class="chartHeader">
+                                    <div class="chart-name">
+                                        <h3>Customers</h3>
+                                    </div>
+                                    <div class="chart-data">
+                                        <h3>€2</h3>
+                                        <span>0% <br /> Last 30 days</span>
+                                    </div>
+                                </div>
+                                <div class="chartBody">
+                                    <div class="chartbox Chart5"></div>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                    </div>
-                    <!-- End Blocs Small Metrix V2 -->
-                    <!-- Blocs Small Metrix 3-->
-                    <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-md-4">
                             <div class="WhiteBox">
-                                <h4 class="pl30 pt20 pb20 tu">AVERAGE REVENUE PER ACCOUNT <i class="tip flaticon solid question-2 gray ml5 mr10" title="Revenu moyen par client"></i></h4>
-                                <a href="#" class="big-block-link gray"> 
-                                    <h3>123 €</h3>                                    
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="WhiteBox">
-                                 <h4 class="pl30 pt20 pb20 tu">ANNUAL RUN RATE<i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i></h4>
-                                <a href="#" class="big-block-link blue"> 
-                                    <h3>2,145</h3>
-                                    <h4>Abonnements</h4>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Blocs Small Metrix V3 -->
-                    <!-- Blocs Small Metrix 4-->
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="WhiteBox">
-                                <h4 class="pl30 pt20 pb20 tu">CUSTOMER LIFE TIME VALUE<i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i></h4>
-                                <a href="#" class="big-block-link blue"> 
-                                    <h3>2,145</h3>
-                                    <h4>Abonnements</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="WhiteBox">
-                                 <h4 class="pl30 pt20 pb20 tu">GROSS MRR CHRUN RATE<i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i></h4>
-                                <a href="#" class="big-block-link gray"> 
-                                    <h3>2,145</h3>
-                                </a>
+                                <div class="chartHeader">
+                                    <div class="chart-name">
+                                        <h3>MRR movements</h3>
+                                    </div>
+                                    <div class="chart-data">
+                                        <h3>€2</h3>
+                                        <span>0% <br /> Last 30 days</span>
+                                    </div>
+                                </div>
+                                <div class="chartBody">
+                                    <div class="chartbox Chart6"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- End Blocs Small Metrix V4 -->
-                    <!-- Blocs Small Metrix 4-->
+
                     <div class="row">
-                        <div class="col-sm-6">
-                            <div class="WhiteBox">
-                                 <h4 class="pl30 pt20 pb20 tu">CUSTOMER CHURN RATE<i class="tip flaticon solid question-2 gray ml5 mr10" title="Attribution"></i></h4>
-                                <a href="#" class="big-block-link gray"> 
-                                    <h3>12 %</h3>
-                                </a>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="WhiteBox text-center">
+                                <div class="chartHeader chartBlock">
+                                    <div class="chart-name">
+                                        <h3>Annual Run Rate</h3>
+                                    </div>
+                                    <div class="chart-data">
+                                        <h3>€160</h3>
+                                    </div>
+                                </div>
+                                <div class="chartBody">
+                                    <div class="chartbox smallchart Chart7"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="WhiteBox">
-                                 <h4 class="pl30 pt20 pb20 tu">CUSTOMER CHURN RATE<i class="tip flaticon solid question-2 gray ml5 mr10" title="Help text .."></i></h4>
-                                <a href="#" class="big-block-link blue"> 
-                                    <h3>12 %</h3>
-                                </a>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="WhiteBox text-center">
+                                <div class="chartHeader chartBlock">
+                                    <div class="chart-name">
+                                        <h3>Average Revenue Per Account</h3>
+                                    </div>
+                                    <div class="chart-data">
+                                        <h3>€7</h3>
+                                        <span>MMR</span>
+                                    </div>
+                                </div>
+                                <div class="chartBody">
+                                    <div class="chartbox smallchart Chart8"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="WhiteBox text-center">
+                                <div class="chartHeader chartBlock">
+                                    <div class="chart-name">
+                                        <h3>Customer Lifetime Value</h3>
+                                    </div>
+                                    <div class="chart-data">
+                                        <h3>€0</h3>
+                                        <span>December</span>
+                                    </div>
+                                </div>
+                                <div class="chartBody">
+                                    <div class="chartbox smallchart Chart9"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="WhiteBox text-center">
+                                <div class="chartHeader chartBlock">
+                                    <div class="chart-name">
+                                        <h3>Customer churn rate</h3>
+                                    </div>
+                                    <div class="chart-data">
+                                        <h3>0%</h3>
+                                        <span>December</span>
+                                    </div>
+                                </div>
+                                <div class="chartBody">
+                                    <div class="chartbox smallchart Chart10"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- End Blocs Small Metrix V4 -->
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="WhiteBox text-center">
+                                <div class="chartHeader chartBlock">
+                                    <div class="chart-name">
+                                        <h3>Gross MRR churn rate</h3>
+                                    </div>
+                                    <div class="chart-data">
+                                        <h3>€0</h3>
+                                        <span>December</span>
+                                    </div>
+                                </div>
+                                <div class="chartBody">
+                                    <div class="chartbox smallchart Chart11"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="WhiteBox text-center">
+                                <div class="chartHeader chartBlock">
+                                    <div class="chart-name">
+                                        <h3>Net MRR churn rate</h3>
+                                    </div>
+                                    <div class="chart-data">
+                                        <h3>0%</h3>
+                                        <span>December</span>
+                                    </div>
+                                </div>
+                                <div class="chartBody">
+                                    <div class="chartbox smallchart Chart12"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="WhiteBox">
+                                <div class="mmrTotal">
+                                    <div class="mmrTotal-header">
+                                        <h3>MRR breakdown</h3>
+                                        <div class="Time">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                <span>This Week</span>
+                                                <i class="caret"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#"><span>This Month</span></a></li>
+                                                <li><a href="#"><span>This Year</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mmrTotal-body">
+                                        <ul class="mmrTotal-list">
+                                            <li>
+                                                <p>New business MRR</p>
+                                                <p>€0</p>
+                                            </li>
+                                            <li>
+                                                <p>Expansion MRR</p>
+                                                <p>€0</p>
+                                            </li>
+                                            <li>
+                                                <p>Contraction MRR</p>
+                                                <p>€0</p>
+                                            </li>
+                                            <li>
+                                                <p>Churn MRR</p>    
+                                                <p>€0</p>
+                                            </li>
+                                            <li>
+                                                <p>Reactivation MRR</p>
+                                                <p>€0</p>
+                                            </li>
+                                            <li>
+                                                <b>Net MRR Movement</b>
+                                                <b>€0</b>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="TableBox mb20">
@@ -2030,6 +2117,7 @@
     <script src="assets/lib/jquery-ui/jquery-ui.min.js"></script>
     <script src="assets/lib/slimscroll/jquery.slimscroll.js"></script>
     <script src="assets/lib/highcharts/highcharts.js"></script>
+    <script src="assets/lib/highcharts/highcharts-more.js"></script>
     <script src="assets/lib/resp-tables/responsive-tables.js"></script>
     <script src="assets/lib/daterangepicker/moment.js"></script>
     <script src="assets/lib/daterangepicker/daterangepicker.js"></script>
@@ -2039,6 +2127,32 @@
     <script>
         //Charts dummy data
         $(function () {
+            var ranges = [
+                [1246406400000, 4.3, 8.5],
+                [1246492800000, 3.5, 11.1],
+                [1246579200000, 5.5, 15],
+                [1246665600000, 4.7, 12.8],
+                [1246752000000, 3.5, 14.4],
+                [1246838400000, 2.8, 9.3],
+                [1246924800000, 5.5, 8.3],
+                [1247011200000, 6.5, 12.4],
+                [1247097600000, 2.2, 17.4],
+                [1247184000000, 3.6, 11.7],
+                [1247270400000, 2.7, 7.5],
+            ],
+            averages = [
+                [1246406400000, 8.5],
+                [1246492800000, 11.1],
+                [1246579200000, 15],
+                [1246665600000, 12.8],
+                [1246752000000, 14.4],
+                [1246838400000, 9.3],
+                [1246924800000, 8.3],
+                [1247011200000, 12.4],
+                [1247097600000, 17.4],
+                [1247184000000, 11.7],
+                [1247270400000, 7.5],
+            ];
             $('.Chart1').highcharts({
                 chart: {
                     type: 'spline',
@@ -2046,10 +2160,16 @@
                     height: $('.Chart1').height()
                 },
                 title: { text: null },
+                credits: { enabled: false },
                 legend: { enabled: false },
                 xAxis: {
-                    categories: ['01/09', '02/09', '03/09', '04/09', '05/09', '06/09', '07/09', '08/09', '09/09', '10/09'],
-                    tickWidth: 0
+                    categories: ['15 Jul', '16 Jul', '17 Jul', '18 Jul', '19 Jul', '20 Jul', '21 Jul', '22 Jul', '23 Jul', '24 Jul'],
+                    tickWidth: 0,
+                    labels: {
+                        style: {
+                            color: '#8b969c'
+                        }
+                    }
                 },
                 yAxis: {
                     title: { text: null },
@@ -2058,26 +2178,46 @@
                     labels: {
                         align: 'left',
                         x: 6,
-                        y: -6
+                        y: -6,
+                        style: {
+                            color: '#8b969c',
+                            fontSize: '13px'
+                        }
                     }
                 },
                 series: [{
                     name: 'Subscribers',
                     data: [28000, 26000, 5000, 42000, 20000, 19000, 8000, 17000, 35000, 28000],
+                    marker: {
+                        enabled: false
+                    },
                     color: '#33b1ed'
+                },{
+                    name: 'Subscribers',
+                    data: [26000, 24000, 7000, 44000, 18000, 17000, 10000, 19000, 33000, 26000],
+                    marker: {
+                        enabled: false
+                    },
+                    color: '#96c93c'
                 }]
             });
             $('.Chart2').highcharts({
                 chart: {
-                    type: 'areaspline',
-                    width: $('.Chart2').width(),
-                    height: $('.Chart2').height()
+                    type: 'spline',
+                    width: $('.Chart1').width(),
+                    height: $('.Chart1').height()
                 },
                 title: { text: null },
+                credits: { enabled: false },
                 legend: { enabled: false },
                 xAxis: {
-                    categories: ['01/09', '02/09', '03/09', '04/09', '05/09', '06/09', '07/09', '08/09', '09/09', '10/09'],
-                    tickWidth: 0
+                    categories: ['15 Jul', '16 Jul', '17 Jul', '18 Jul', '19 Jul', '20 Jul', '21 Jul', '22 Jul', '23 Jul', '24 Jul'],
+                    tickWidth: 0,
+                    labels: {
+                        style: {
+                            color: '#8b969c'
+                        }
+                    }
                 },
                 yAxis: {
                     title: { text: null },
@@ -2086,21 +2226,30 @@
                     labels: {
                         align: 'left',
                         x: 6,
-                        y: -6
-                    }
-                },
-                plotOptions: {
-                    areaspline: {
-                        fillOpacity: 0.3
+                        y: -6,
+                        style: {
+                            color: '#8b969c',
+                            fontSize: '13px'
+                        }
                     }
                 },
                 series: [{
                     name: 'Subscribers',
-                    data: [20000, 19000, 8000, 17000, 35000, 28000, 28000, 26000, 5000, 42000],
-                    color: '#1474a2'
+                    data: [23000, 21000, 5000, 38000, 15000, 14000, 3000, 12000, 30000, 22000],
+                    marker: {
+                        enabled: false
+                    },
+                    color: '#ec8a68'
+                },{
+                    name: 'Subscribers',
+                    data: [21000, 19000, 2000, 39000, 13000, 12000, 5000, 14000, 28000, 21000],
+                    marker: {
+                        enabled: false
+                    },
+                    color: '#9c80df'
                 }]
-            });
-            $('.Chart3').highcharts({
+            });    
+            $('.Chart3').highcharts({               
                 chart: {
                     type: 'pie',
                     width: $('.Chart3').width(),
@@ -2110,16 +2259,14 @@
                     text: 'ABONNES<br>/<br>VPC’s',
                     align: 'center',
                     verticalAlign: 'middle',
-                    y: -30
-                },
-                legend: {
-                    enabled: true,
-                    borderWidth: 0,
-                    itemDistance: 30,
-                    labelFormatter: function () {
-                        return this.y + '% ' + this.name + ' ';
+                    y: -35,
+                    style: {
+                        color: '#8b969c',
+                        fontSize: '13px',
+                        fontWeight: '100'
                     }
                 },
+                credits: { enabled: false },
                 tooltip: {
                     valueSuffix: '%'
                 },
@@ -2131,10 +2278,21 @@
                         showInLegend: true
                     }
                 },
+                legend: {
+                    enabled: true,
+                    borderWidth: 0,
+                    itemDistance: 30,
+                    itemStyle: {
+                        fontWeight: '300'
+                    },
+                    labelFormatter: function () {
+                        return this.y + '% ' + this.name + ' ';
+                    }
+                },
                 series: [{
                     name: "Reparition",
                     colorByPoint: true,
-                    innerSize: '99%',
+                    innerSize: '90%',
                     data: [{
                         name: "Abonnes",
                         color: "#33b1ed",
@@ -2145,36 +2303,492 @@
                         y: 33
                     }]
                 }]
+               
+            });
+            $('.Chart4').highcharts({
+                title: { text: null },
+                credits: { enabled: false },
+                legend: { enabled: false },
+                subtitle: { enabled: false },
+                xAxis: {
+                    type: 'datetime',
+                    labels: { enabled: false } ,
+                    tickWidth: 0,
+                    visible: false
+                },
+                yAxis: { 
+                    title: { text: '' },
+                    labels: { enabled: false } ,
+                    tickInterval: 5,
+                    gridLineDashStyle: 'longdash'
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    valueSuffix: '€'
+                },
+                plotOptions: {
+                    series: {
+                        fillOpacity: 0.1
+                    },
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                legend: { enabled: false },
+                series: [{
+                    name: 'MMR',
+                    data: averages,
+                    dashStyle: 'longdash',
+                    zIndex: 1,
+                    marker: {
+                        fillColor: '#FFFFFF',
+                        lineWidth: 2,
+                        lineColor: null,
+                        radius: 3
+                    }
+                }, {
+                    name: 'Range',
+                    data: ranges,
+                    type: 'arearange',
+                    lineWidth: 0,
+                    linkedTo: ':previous',
+                    color: '#f1f8fb',
+                    fillOpacity: 0.3,
+                    zIndex: 0,
+                    marker: {
+                        enabled: false,
+                    }
+                }]
+            });
+            $('.Chart5').highcharts({
+                title: { text: null },
+                credits: { enabled: false },
+                legend: { enabled: false },
+                subtitle: { enabled: false },
+                xAxis: {
+                    type: 'datetime',
+                    labels: { enabled: false } ,
+                    tickWidth: 0,
+                    visible: false
+                },
+                yAxis: { 
+                    title: { text: '' },
+                    labels: { enabled: false } ,
+                    tickInterval: 5,
+                    gridLineDashStyle: 'longdash'
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    valueSuffix: '€'
+                },
+                plotOptions: {
+                    series: {
+                        fillOpacity: 0.1
+                    },
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                legend: { enabled: false },
+                series: [{
+                    name: 'Customers',
+                    data: averages,
+                    dashStyle: 'longdash',
+                    zIndex: 1,
+                    marker: {
+                        fillColor: '#FFFFFF',
+                        lineWidth: 2,
+                        lineColor: null,
+                        radius: 3
+                    }
+                }, {
+                    name: 'Range',
+                    data: ranges,
+                    type: 'arearange',
+                    lineWidth: 0,
+                    linkedTo: ':previous',
+                    color: '#f1f8fb',
+                    fillOpacity: 0.3,
+                    zIndex: 0,
+                    marker: {
+                        enabled: false
+                    }
+                }]
+            });
+            $('.Chart6').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title: { text: null },
+                credits: { enabled: false },
+                legend: { enabled: false },
+                subtitle: { enabled: false },
+                xAxis: {
+                    startOnTick:true,
+                    endOnTick:true,
+                    type: 'datetime',
+                    labels: { enabled: false },
+                    visible: false
+                },
+                yAxis: { 
+                    min: 0,
+                    title: { text: '' },
+                    labels: { enabled: false } ,
+                    tickInterval: 50,
+                    gridLineDashStyle: 'longdash'
+                },
+                tooltip: {
+                    useHTML: true,
+                    formatter:function(){
+                        return '<p>' + this.y + '%' + '</p>';
+                    }
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'MMR movements',
+                    data: [24.95, 35.75, 53.2, 64.6, 72, 88, 67.8, 74.25],
+                    color: '#96c93c'
+                    
+                }]
+            });            
+            $('.Chart7').highcharts({
+                chart: { 
+                    renderTo: 'chart',
+                    type: 'areaspline',
+                    margin: 0,
+                    width: $('.Chart7').width(),
+                    height: $('.Chart7').height()
+                },
+                title: {
+                    text: '0% <br /> Last 30 Days',
+                    align: 'center',
+                    y: 65,
+                    floating: true,
+                    style: {
+                        color: '#8b969c',
+                        fontSize: '13px',
+                        fontWeight: '100'
+                    }
+                },
+                subtitle: { text: null },
+                credits: { enabled: false },
+                legend: { enabled: false },
+                subtitle: { enabled: false },
+                xAxis: {
+                    type: 'datetime',
+                    minPadding: 0,
+                    maxPadding: 0,
+                    labels: { enabled: false } ,
+                    tickWidth: 0,
+                    visible: false
+                },
+                yAxis: {
+                    visible:false,
+                },
+                tooltip: {
+                    useHTML: true,
+                    formatter:function(){
+                        return '<p>' + this.y + '€' + '</p>';
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        fillOpacity: 0.05
+                    }
+                },
+                legend: { enabled: false },
+                series: [{
+                    name: 'Annual Run Rate',
+                    marker: {
+                        enabled: false
+                    },
+                    data: [15, 20, 15, 25, 30, 20, 22, 25, 20],
+                }]
+            });
+            $('.Chart8').highcharts({
+                chart: { 
+                    type: 'areaspline',
+                    margin: 0,
+                    width: $('.Chart8').width(),
+                    height: $('.Chart8').height()
+                },
+                title: {
+                    text: '0% <br /> Last 30 Days',
+                    align: 'center',
+                    y: 65,
+                    floating: true,
+                    style: {
+                        color: '#8b969c',
+                        fontSize: '13px',
+                        fontWeight: '100'
+                    }
+                },
+                subtitle: { text: null },
+                credits: { enabled: false },
+                legend: { enabled: false },
+                subtitle: { enabled: false },
+                xAxis: {
+                    type: 'datetime',
+                    minPadding: 0,
+                    maxPadding: 0,
+                    labels: { enabled: false } ,
+                    tickWidth: 0,
+                    visible: false
+                },
+                yAxis: {
+                    visible:false,
+                },
+                tooltip: {
+                    useHTML: true,
+                    formatter:function(){
+                        return '<p>' + this.y + '€' + '</p>';
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        fillOpacity: 0.1
+                    }
+                },
+                legend: { enabled: false },
+                series: [{
+                    name: 'Average Revenue Per Account',
+                    marker: {
+                        enabled: false
+                    },
+                    data: [15, 20, 15, 25, 30, 20, 22, 25, 20],
+                    color: '#96c93c'
+                }]
+            });
+            $('.Chart9').highcharts({
+                chart: { 
+                    type: 'areaspline',
+                    margin: 0,
+                    width: $('.Chart9').width(),
+                    height: $('.Chart9').height()
+                },
+                title: {
+                    text: 'From <br /> November',
+                    align: 'center',
+                    y: 65,
+                    floating: true,
+                    style: {
+                        color: '#8b969c',
+                        fontSize: '13px',
+                        fontWeight: '100'
+                    }
+                },
+                subtitle: { text: null },
+                credits: { enabled: false },
+                legend: { enabled: false },
+                subtitle: { enabled: false },
+                xAxis: {
+                    type: 'datetime',
+                    minPadding: 0,
+                    maxPadding: 0,
+                    labels: { enabled: false } ,
+                    tickWidth: 0,
+                    visible: false
+                },
+                yAxis: {
+                    visible:false,
+                },
+                tooltip: {
+                    useHTML: true,
+                    formatter:function(){
+                        return '<p>' + this.y + '€' + '</p>';
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        fillOpacity: 0.1
+                    }
+                },
+                legend: { enabled: false },
+                series: [{
+                    name: 'Customer Lifetime Value',
+                    marker: {
+                        enabled: false
+                    },
+                    data: [15, 20, 15, 25, 30, 20, 22, 25, 20],
+                    color: '#96c93c'
+                }]
+            });
+            $('.Chart10').highcharts({
+                chart: { 
+                    type: 'areaspline',
+                    margin: 0,
+                    width: $('.Chart10').width(),
+                    height: $('.Chart10').height()
+                },
+                title: {
+                    text: 'From <br /> November',
+                    align: 'center',
+                    y: 65,
+                    floating: true,
+                    style: {
+                        color: '#8b969c',
+                        fontSize: '13px',
+                        fontWeight: '100'
+                    }
+                },
+                subtitle: { text: null },
+                credits: { enabled: false },
+                legend: { enabled: false },
+                subtitle: { enabled: false },
+                xAxis: {
+                    type: 'datetime',
+                    minPadding: 0,
+                    maxPadding: 0,
+                    labels: { enabled: false } ,
+                    tickWidth: 0,
+                    visible: false
+                },
+                yAxis: {
+                    visible:false,
+                },
+                tooltip: {
+                    useHTML: true,
+                    formatter:function(){
+                        return '<p>' + this.y + '€' + '</p>';
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        fillOpacity: 0.1
+                    }
+                },
+                legend: { enabled: false },
+                series: [{
+                    name: 'Customer churn rate',
+                    marker: {
+                        enabled: false
+                    },
+                    data: [15, 20, 15, 25, 30, 20, 22, 25, 20],
+                }]
+            });
+            $('.Chart11').highcharts({
+                chart: { 
+                    type: 'areaspline',
+                    margin: 0,
+                    width: $('.Chart11').width(),
+                    height: $('.Chart11').height()
+                },
+                title: {
+                    text: 'From <br /> November',
+                    align: 'center',
+                    y: 65,
+                    floating: true,
+                    style: {
+                        color: '#8b969c',
+                        fontSize: '13px',
+                        fontWeight: '100'
+                    }
+                },
+                subtitle: { text: null },
+                credits: { enabled: false },
+                legend: { enabled: false },
+                subtitle: { enabled: false },
+                xAxis: {
+                    type: 'datetime',
+                    minPadding: 0,
+                    maxPadding: 0,
+                    labels: { enabled: false } ,
+                    tickWidth: 0,
+                    visible: false
+                },
+                yAxis: {
+                    visible:false,
+                },
+                tooltip: {
+                    useHTML: true,
+                    formatter:function(){
+                        return '<p>' + this.y + '€' + '</p>';
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        fillOpacity: 0.1
+                    }
+                },
+                legend: { enabled: false },
+                series: [{
+                    name: 'Customer churn rate',
+                    marker: {
+                        enabled: false
+                    },
+                    data: [15, 20, 15, 25, 30, 20, 22, 25, 20],
+                    color: '#96c93c'
+                }]
+            });
+            $('.Chart12').highcharts({
+                chart: { 
+                    type: 'areaspline',
+                    margin: 0,
+                    width: $('.Chart12').width(),
+                    height: $('.Chart12').height()
+                },
+                title: {
+                    text: 'From <br /> November',
+                    align: 'center',
+                    y: 65,
+                    floating: true,
+                    style: {
+                        color: '#8b969c',
+                        fontSize: '13px',
+                        fontWeight: '100'
+                    }
+                },
+                subtitle: { text: null },
+                credits: { enabled: false },
+                legend: { enabled: false },
+                subtitle: { enabled: false },
+                xAxis: {
+                    type: 'datetime',
+                    minPadding: 0,
+                    maxPadding: 0,
+                    labels: { enabled: false } ,
+                    tickWidth: 0,
+                    visible: false
+                },
+                yAxis: {
+                    visible:false,
+                },
+                tooltip: {
+                    useHTML: true,
+                    formatter:function(){
+                        return '<p>' + this.y + '€' + '</p>';
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        fillOpacity: 0.1
+                    }
+                },
+                legend: { enabled: false },
+                series: [{
+                    name: 'Customer churn rate',
+                    marker: {
+                        enabled: false
+                    },
+                    data: [15, 20, 15, 25, 30, 20, 22, 25, 20],
+                }]
             });
         });
-    </script>
-     <script>
-    //Charts dummy data
-    $(function () {
-        $('.Chart1').highcharts({
-            chart: {
-                type: 'column',
-                width: $('.Chart1').width(),
-                height: $('.Chart1').height()
-            },
-            title: { text: null },
-            legend: { enabled: false },
-            xAxis: {
-                categories: ['Relance 0', 'Relance 1', 'Relance 2', 'Relance 3', 'Relance 4', 'Relance 5'],
-                tickWidth: 0
-            },
-            yAxis: {
-                title: { text: null },
-                gridLineColor: '#e8ebef',
-                endOnTick: false
-            },
-            series: [{
-                name: 'Data',
-                data: [200, 375, 250, 150, 75, 125],
-                color: '#33b1ed'
-            }]
-        });
-    });
     </script>
 
 </body>
