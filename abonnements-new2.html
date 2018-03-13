@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>AboWebV3</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/lib/budicon/budicon.css" rel="stylesheet" />
+    <link href="assets/lib/flaticons/solid/solid.css" rel="stylesheet" />
+    <link href="assets/lib/flaticons/stroke/stroke.css" rel="stylesheet" />
+    <link href="assets/lib/flaticons/social/social.css" rel="stylesheet" />
+    <link href="assets/lib/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="assets/css/style.min.css" rel="stylesheet" />
+
+</head>
+<body class="Abonnements-Creer-Abonnement">
+
+    <header class="MainHeader">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="LeftSidebarToggleButton"><i></i></div>
+                    <div class="Company">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Transat</a>
+                        <ul class="dropdown-menu arrow">
+                            <li><a href="#">Test</a></li>
+                            <li><a href="#">Pressmaker</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <a class="navbar-brand hidden-xs" href="/">
+                        <img src="assets/img/AboWebLogo.svg" width="113" />
+                    </a>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="Lang">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span>Eng</span>
+                                <i class="caret"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><img src="assets/img/fr.jpg" /><span>FRE</span></a></li>
+                                <li><a href="#"><img src="assets/img/en.jpg" /><span>ENG</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="Orders">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="flaticon solid cart-3"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="Subscription">
+                                    <a href="#">
+                                        <span>14</span>
+                                        Abonnements
+                                    </a>
+                                </li>
+                                <li class="Renewal">
+                                    <a href="#">
+                                        <span>68</span>
+                                        Reabonnements
+                                    </a>
+                                </li>
+                                <li class="AddressChange">
+                                    <a href="#">
+                                        <span>6</span>
+                                        Changements D’adresse
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Notifications new">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="flaticon solid bell-2"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-dont-close">
+                                <ul>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #323</a> has been delivered this Tuesday.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #322</a> has been delivered this Tuesday. Now its going to Nebraska on shipping details processing. After that will be returned to Chicago.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #321</a> has been delivered.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #321</a> has been delivered this Tuesday.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #321</a> has been delivered this Tuesday.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <a href="#">Order #321</a> has been delivered this Tuesday.
+                                        </div>
+                                        <div class="time">14:45</div>
+                                        <a class="mark-as-reed" title="Mark as reed" href="#"></a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="SeeAllNotifications">
+                                    Voir Tout <i class="budicon interface-arrowright5"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="User">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span>Thomas D.</span>
+                                <i class="caret"></i>
+                                <div class="img" style="background-image: url('assets/img/dummy/01.jpg');"></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="progres">
+                                    <span>Profil</span>
+                                    <p>70%</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%;"></div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="flaticon solid user-2"></i>My Profile</a></li>
+                                <li><a href="#"><i class="flaticon solid settings-2"></i>Settings</a></li>
+                                <li><a href="#"><i class="flaticon stroke upload-1 r90"></i>Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="MainContent">
+
+        <!--START of LeftSidebar-->
+        <div class="LeftSidebar">
+            <div class="inner">
+                <section class="title">
+                    <header data-toggle="dropdown">
+                        <span>Titre sélectionné</span>
+                        <h4>Lonely Planet</h4>
+                    </header>
+                    <ul>
+                        <li><a href="#">Lonely Planet</a></li>
+                        <li><a href="#">Marie Claire</a></li>
+                        <li><a href="#">Tous les titres</a></li>
+                        <li><a href="#">V.A.D</a></li>
+                    </ul>
+                </section>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html"><i class="flaticon solid house-2"></i><span>Home</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="flaticon solid group-1"></i><span>Contacts</span><b>124</b></a>
+                        <ul>
+                            <li><a href="contact.html">Listes des contacts</a></li>
+                            <li><a href="contact-detail.html">Créer</a></li>
+                            <li class="disabled"><a href="#">Export excel</a></li>
+                            <li><a href="contact.html">Afficher non abonnés</a></li>
+                        </ul>
+                    </li>
+                    <li class="selected">
+                        <a href="#"><i class="flaticon solid newspaper-1"></i><span>Abonnements</span></a>
+                        <ul>
+                            <li><a href="abonnements.html">Liste des abonnements</a></li>
+                            <li><a href="#">Importer des abonnements</a></li>
+                            <li class="selected"><a href="abonnements-new.html">Créer un abonnement</a></li>
+                            <li><a href="abonnements-rapide.html">Créer un abo. rapide</a></li>
+                            <li><a href="#">Créer un reabo rapide</a></li>
+                            <li><a href="abonnements-serie.html">Créer un reabo en série</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="flaticon solid airplane-1"></i><span>Livraisons</span></a>
+                        <ul>
+                            <li><a href="livraison.html">Livraison du titre</a></li>
+                            <li><a href="livraison-reassorts.html">Livraison des réassorts</a></li>
+                            <li><a href="livraison-articles.html">Liv. des articles libres</a></li>
+                            <li><a href="#">Paramétrage routeur</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="flaticon solid refresh-1"></i><span>Relance</span></a>
+                        <ul>
+                            <li><a href="relance-abo1.html">Relance des abo</a></li>
+                            <li><a href="#">Relance des tiers</a></li>
+                            <li><a href="relance-analyse.html">Analyse des relances</a></li>
+                            <li><a href="relance-emails.html">Emails de relance</a></li>
+                            <li><a href="relance-type.html">Lettres type de relance</a></li>
+                            <li><a href="relance-lettre.html">Lettres de relance tiers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="flaticon solid money-2"></i><span>Facturation</span><b>6</b></a>
+                        <ul>
+                            <li><a href="#">Listes des factures</a></li>
+                            <li><a href="#">Gestion des règlements</a></li>
+                            <li><a href="facturation-attente.html">Abo non facturés</a></li>
+                            <li><a href="facturation-journal.html">Etats comptables</a></li>
+                            <li><a href="#">Relances des impayés</a></li>
+                            <li><a href="#">Lettre type de relance</a></li>
+                            <li><a href="facturation-comptabilite.html">Transfert en comptabilité</a></li>
+                            <li><a href="facturation-deverouillage.html">Déverouillage facturation</a></li>
+                            <li><a href="facturation-prelevement.html">Fichier de prélèvements</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="flaticon solid clipboard-4"></i><span>Resultat</span></a>
+                        <ul>
+                            <li><a href="resultat-diffusion.html">Résultat de diffusion</a></li>
+                            <li><a href="resultat-ventes.html">Résultat de ventes</a></li>
+                            <li><a href="resultat-abonnes.html">Dette abonnés</a></li>
+                            <li><a href="resultat-reabonneent.html">Taux de réabonnement</a></li>
+                            <li><a href="#">CA et prix moyen par N°</a></li>
+                            <li><a href="resultat-repartition.html">Répartition du CA</a></li>
+                            <li><a href="#">Reporting</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="flaticon solid mail-1"></i><span>Abomail</span></a>
+                    </li>
+                    <li class="disabled">
+                        <a href="#"><i class="flaticon solid smart-phone-1"></i><span>Aboquote</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="flaticon solid journal-2"></i><span>Administration</span></a>
+                        <ul>
+                            <li><a href="administration-titres.html">Titres</a></li>
+                            <li><a href="administration-calendrier.html">Calendrier</a></li>
+                            <li><a href="administration-tarifs-abo.html">Tarifs d'abo</a></li>
+                            <li><a href="administration-formules-abo.html">Formules d'abo</a></li>
+                            <li><a href="administration-tarifs-article.html">Tarifs d'articles libres</a></li>
+                            <li><a href="administration-stocks.html">Stocks</a></li>
+                            <li><a href="#">Sociétés</a></li>
+                            <li><a href="#">Compteurs</a></li>
+                            <li><a href="administration-code-selection.html">Codes de sélection</a></li>
+                            <li><a href="administration-aide-saisie.html">Aide à la saisie</a></li>
+                            <li><a href="administration-code-tva.html">Codes TVA</a></li>
+                            <li><a href="administration-pays-etranger.html">Pays étranger</a></li>
+                            <li><a href="administration-familles.html">Familles de fraise port</a></li>
+                        </ul>
+                    </li>
+                    <li class="space"></li>
+                    <li>
+                        <a href="#"><i class="flaticon solid skill-1"></i><span>Parameters</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="flaticon solid question-2"></i><span>Aide</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--END of LeftSidebar-->
+
+        <div class="Content">
+            <div class="inner">
+                <div class="container">
+
+                    <div class="row mb30">
+                        <div class="col-sm-10">
+                            <div class="SearchWithFilters">
+                                <div class="search">
+                                    <input type="text" name="search" placeholder="Search Aboweb" />
+                                    <i class="icon-left flaticon stroke zoom-2"></i>
+                                    <a href="#" class="filters-btn" data-toggle-active="filters">
+                                        <span>Filter</span>
+                                        <i class="icon-right flaticon stroke paragraph-right-1"></i>
+                                    </a>
+                                </div>
+                                <div class="filters mouseleave-close" data-toggle-active="filters">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <ul class="created-filters">
+                                                <li>
+                                                    <a href="#" class="select">Filter1</a>
+                                                    <a href="#" class="edit" title="Edit"><i class="flaticon stroke pencil-1"></i></a>
+                                                    <a href="#" class="delete" title="Delete"><i class="flaticon stroke x-1"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="select">Filter2</a>
+                                                    <a href="#" class="edit" title="Edit"><i class="flaticon stroke pencil-1"></i></a>
+                                                    <a href="#" class="delete" title="Delete"><i class="flaticon stroke x-1"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3 pr0 xs-pr10">
+                                            <label class="bb br">Titre</label>
+                                        </div>
+                                        <div class="col-sm-9 pl0 xs-pl10">
+                                            <input class="bb" type="text" placeholder="Comment s’appel mon filtre?" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3 pr0 xs-pr10">
+                                            <label class="bb br">Accessible Pour</label>
+                                        </div>
+                                        <div class="col-sm-7 pl0 pr0 xs-pl10 xs-pr10">
+                                            <select class="bb br">
+                                                <option selected disabled style="display:none;">Pur qui?</option>
+                                                <option>Pour tout le monde</option>
+                                                <option>Pour moi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-2 pl0 text-center">
+                                            <div class="bb">
+                                                <a href="#" class="icon-link" data-select-group="EtOu"><i class="flaticon stroke refresh-1"></i>Et</a>
+                                                <a href="#" class="icon-link active" data-select-group="EtOu"><i class="flaticon stroke repeat-4"></i>Ou</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3 pr0 xs-pr10">
+                                            <label class="bb br">Criterie</label>
+                                        </div>
+                                        <div class="col-sm-7 pl0 pr0 xs-pl10 xs-pr10">
+                                            <div class="cirteria">
+                                                <a href="#" class="cirteria-list" data-toggle-active="cirteria">
+                                                    <ul class="selected-cirteria">
+                                                        <li>Facture</li>
+                                                        <li>Date de la facture</li>
+                                                    </ul>
+                                                    <!--<input type="text" placeholder="Cirteria Text" />-->
+                                                </a>
+                                                <div class="cirteria-dropdown" data-toggle-active="cirteria">
+                                                    <ul class="possible-cirterias">
+                                                        <li><a href="#" data-toggle-active="cirteria">Client</a></li>
+                                                        <li><a href="#" data-toggle-active="cirteria">Abonnement</a></li>
+                                                        <li><a href="#" data-toggle-active="cirteria">Règlement</a></li>
+                                                        <li><a href="#" data-toggle-active="cirteria">Tarif</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-1 col-xs-6 pl0 xs-pl10 pr0">
+                                            <a href="#" class="new-filter bb br" title="Add">+</a>
+                                        </div>
+                                        <div class="col-sm-1 col-xs-6  pl0">
+                                            <a href="#" class="del-filter bb" title="Remove">-</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3"></div>
+                                        <div class="col-sm-5 pl0 pr0">
+                                            <!--<input type="text" class="underline" placeholder="Or here - Cirteria Text" />-->
+                                        </div>
+                                        <div class="col-sm-4 text-right pt10 pb10 pr20">
+                                            <a href="#" class="btn green condensed icon" data-toggle-active="filters"><i class="flaticon stroke checkmark-1"></i>Valider</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="text-right xs-text-center xs-pt20">
+                                <a open-popup="CreateNewContact" href="#" class="btn round gray-light mr10" title="Add Contact"><i class="flaticon solid add-user-1"></i></a>
+                                <a open-popup="CreateNewSubscription" href="#" class="btn round gray-light" title="Create subscription"><i class="flaticon solid document-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb20">
+                        <div class="col-sm-10 xs-text-center">
+                            <h1>CRÉER UN COMMANDE</h1>
+                        </div>
+                        <div class="col-sm-2 text-right xs-text-center xs-pt20">
+                            <div class="tool-box down">
+                                <a href="#" class="btn small condensed">
+                                    <span class="ibm mr10">Actions</span>
+                                    <i class="caret ibm white"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="#">Créer un Abo.</a></li>
+                                    <li><a href="#">Abo. rapide</a></li>
+                                    <li><a href="#">Abo. en série</a></li>
+                                    <li><a href="#">Réabo. rapide</a></li>
+                                    <li><a href="#">Réabo. en série</a></li>
+                                    <li><a href="#">Créer une facture</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb20">
+                        <div class="col-sm-12">
+                            <div class="InfoOpenBox">
+                                <a class="info-btn" href="#" data-toggle-active="TopInfoBox"></a>
+                                <div class="info-box" data-toggle-active="TopInfoBox">
+                                    <form class="table">
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                                Societe
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <input type="text" class="sl small" value="TRANSAT" />
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                                Nbre Contacts
+                                            </div>
+                                            <div class="cell-m-100 pl5">
+                                                16
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw blue tu fs12 pt20 pb5">
+                                                Gestion Client
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                                Nobre NPAI
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <select class="sl small">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                                NPAI
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <div class="pl5">
+                                                    <input type="checkbox" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                                Note NPAI
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <input type="text" class="sl small" placeholder="Note ..." />
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw blue tu fs12 pt20 pb5">
+                                                Option CNIl
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                                Pas de Mailing
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <div class="pl5">
+                                                    <input type="checkbox" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                                Pas de Emailing
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <div class="pl5">
+                                                    <input type="checkbox" checked />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                                Ne Pas difuser
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <div class="pl5">
+                                                    <input type="checkbox" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <span class="ibm mr5 ml10 gray mt2">Client:</span>
+                            <span class="ibm fs20">Thomas Defossez</span>
+                            <a open-popup="TiersPayant"  href="#" class="ibm fs20 ml10">9474</a>
+                            <a href="#" class="ibm ml20">
+                                <span class="ibm hidden-xs">More info</span>
+                                <i class="flaticon stroke down-2 ibm fs10 mt2"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row mb15">
+                        <div class="col-sm-12">
+                            <ul class="Tabs style5">
+                                <li><a href="#" class="active" data-tab="Abonnement" data-tabgroup="CreerAbonnament">Détails</a></li>
+                                <li><a href="#" data-tab="Codes" data-tabgroup="CreerAbonnament">Codes de selection</a></li>
+                                <li><a href="#" data-tab="Reassorts" data-tabgroup="CreerAbonnament">Reassorts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--ONGLET ABONNEMENT -->
+                    <div class="TabPane Abonnement active" data-tab="Abonnement" data-tabgroup="CreerAbonnament">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                                <div class="WhiteBox">
+                                    <div class="p40 pr80">
+                                        <div class="row mb10">
+                                            <div class="col-sm-4 pt13 gray text-right xs-text-left">
+                                                Date ordre:
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input type="text" data-type="date" value="04/09/2016" />
+                                            </div>
+                                        </div>
+                                        <div class="row mb10">
+                                            <div class="col-sm-4 pt13 gray text-right xs-text-left">
+                                                Produits:
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <select>
+                                                    <option>Lonley Planet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb10">
+                                            <div class="col-sm-4 pt13 gray text-right xs-text-left">
+                                                Code :
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <select>
+                                                    <option>36.5-24-HWHQ</option>
+                                                    <option>36.5-24-HWHQ</option>
+                                                    <option>36.5-24-HWHQ</option>
+                                                    <option>36.5-24-HWHQ</option>
+                                                    <option>36.5-24-HWHQ</option>
+                                                    <option>36.5-24-HWHQ</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-3 pt23 xs-pt5">
+                                                <a href="#" class="undl">Selection per familie</a>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+
+                            </div>
+
+
+                            <!--Bloc Option -->
+                            <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                                 <!--Bloc Montant -->
+                                
+                               
+                            </div>
+                            </div>
+                      
+                                <!--Bloc Test Ligne Article Mibre -->
+                                
+                                <!--Fin Test -->
+                    </div>
+                    <!--FIN ONGLET ABONNEMENT -->
+                    <!-- ONGLET CS -->
+                    <div class="TabPane Codes" data-tab="Codes" data-tabgroup="CreerAbonnament">
+                        Codes de selection Tab Content Here...
+                    </div>
+                     <!--FIN ONGLET CS -->
+                    <!-- ONGLET REASSORT -->
+
+                    <div class="TabPane Reassorts" data-tab="Reassorts" data-tabgroup="CreerAbonnament">
+                        Reassorts Tab Content Here...
+                    </div>
+                    <!--FIN ONGLET REASSORT -->
+                </div>
+            </div>
+            <!--BARRE FONCTION -->
+            <div class="footer">
+                <div class="container">
+                    <div class="text-right">
+                        <a href="#" class="btn icon-right condensed mr10 xs-small xs-mr5">Facturer<i class="flaticon stroke right-4 hidden-xs"></i></a>
+                        <a href="#" class="btn green condensed mr10 xs-small xs-mr5">Valider et recalculer</a>
+                        <a href="#" class="btn green icon condensed xs-small xs-mr5"><i class="flaticon stroke checkmark-1 hidden-xs"></i>Valider</a>
+                        <div class="separator ml15 mr15 hidden-xs"></div>
+                        <a href="#" class="btn round gray-light hidden-xs"><i class="flaticon stroke calculator-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--FIN BARRE FONCTION  -->
+        </div>
+
+        
+
+    </main>
+
+    <div class="PopUps">
+         <!--POP TIERS -->
+        <div popup="TiersPayant">
+            <div class="popup-main-header">
+                <h4>Tiers payant</h4>
+                <a href="#" class="close" close-popup=""></a>
+            </div>
+            <div class="popup-main-content p30 pb15">
+                <div class="row mb20">
+                    <div class="col-sm-4">
+                        <span class="ibm pb5">Code</span><input type="text" class="ibm xs-mb10" />
+                    </div>
+                    <div class="col-sm-6">
+                        <span class="ibm pb5">Nom</span><input type="text" class="ibm" />
+                    </div>
+                    <div class="col-sm-2 pt20">
+                        <a href="#" class="btn small condensed2">Lancer</a>
+                    </div>
+                </div>
+                <table class="style2">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Client</th>
+                            <th>CP-Ville</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">5883</a></td>
+                            <td><a href="#">Loreum ispum dolor imset</a></td>
+                            <td><a href="#">75000 PARIS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">5883</a></td>
+                            <td><a href="#">Loreum ispum dolor imset</a></td>
+                            <td><a href="#">75000 PARIS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">5883</a></td>
+                            <td><a href="#">Loreum ispum dolor imset</a></td>
+                            <td><a href="#">75000 PARIS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">5883</a></td>
+                            <td><a href="#">Loreum ispum dolor imset</a></td>
+                            <td><a href="#">75000 PARIS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">5883</a></td>
+                            <td><a href="#">Loreum ispum dolor imset</a></td>
+                            <td><a href="#">75000 PARIS</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-right pt5">
+                    <a href="#" class="btn smaller white-grey condensed2">Tout voir</a>
+                </div>
+            </div>
+        </div>
+        <!--FIN POPUP-->
+       
+       
+        
+    </div>
+
+
+    <script src="assets/lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/lib/slimscroll/jquery.slimscroll.js"></script>
+    <script src="assets/lib/highcharts/highcharts.js"></script>
+    <script src="assets/lib/resp-tables/responsive-tables.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+</html>
