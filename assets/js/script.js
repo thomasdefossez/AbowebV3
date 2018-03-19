@@ -395,6 +395,10 @@ $(document).ready(function () {
         $("table.responsive").ngResponsiveTables({});
     }
 
+    if ($("table.responsive2").length > 0) {
+        $("table.responsive2").ngResponsiveTables({});
+    }
+
     //Refresh rotation
     if ($(".btn-refresh").length > 0){
         $(".btn-refresh").click(function () {
@@ -405,6 +409,13 @@ $(document).ready(function () {
             }, 9);
         });
     }
+
+    //Toogle Betweeen WhiteBox Front and Back
+    $(".js-whitebox").click(function (e) {
+        e.preventDefault();
+        $(".box-toggle").toggleClass("active");
+        
+    });
 
     // Page: Index
     if ($("body").hasClass("Index")) {

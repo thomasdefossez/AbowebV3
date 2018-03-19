@@ -88,6 +88,91 @@ button {
 label {
   margin: 0;
 }
+form.form-management input {
+  width: 100%;
+  border-color: transparent;
+  color: #163543;
+}
+form.form-management input::-webkit-input-placeholder {
+  color: #5f6a73;
+}
+form.form-management input::-moz-placeholder {
+  color: #5f6a73;
+}
+form.form-management input:-ms-input-placeholder {
+  color: #5f6a73;
+}
+form.form-management input:-moz-placeholder {
+  color: #5f6a73;
+}
+form.form-management input:hover,
+form.form-management input:focus {
+  border-color: transparent;
+  border-bottom: 1px solid #33b1ed;
+}
+form.form-management .md-input {
+  display: table;
+  width: 100%;
+}
+form.form-management .md-input .md-span {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 35%;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #8b969c;
+}
+@media (max-width: 767px) {
+  form.form-management .md-input .md-span {
+    width: 50%;
+  }
+}
+form.form-management .md-input .md-span i {
+  position: absolute;
+  left: -5px;
+}
+form.form-management .md-input .md-holder {
+  display: table-cell;
+  vertical-align: middle;
+  width: 65%;
+}
+@media (max-width: 767px) {
+  form.form-management .md-input .md-holder {
+    width: 50%;
+  }
+}
+form.form-management .md-input .exd-span {
+  color: #8b969c;
+  font-weight: 400;
+  font-size: 16px;
+}
+form.form-management .md-input .exd-mail {
+  position: relative;
+  top: -7px;
+  width: auto;
+  float: right;
+}
+@media (max-width: 767px) {
+  form.form-management .md-input .exd-mail {
+    display: block;
+    position: initial;
+    padding: 0;
+    margin: 15px 0;
+    float: none;
+  }
+}
+form.form-management select {
+  cursor: pointer;
+}
+form.form-management select.exd {
+  display: inline-block;
+  font-size: 16px;
+  background: none !important;
+  border: none;
+  border-bottom: 1px solid #e3e7ec;
+  border-radius: 0;
+}
 @media (max-width: 767px) {
   table.responsive,
   table.responsive thead,
@@ -1499,6 +1584,14 @@ a[class~="blue"]:hover {
 .blue-bg {
   background-color: #33b1ed !important;
 }
+.blue-border {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.blue-border:hover,
+.blue-border:focus {
+  border: 1px solid #33b1ed !important;
+}
 .blue-dark {
   color: #178cc3 !important;
 }
@@ -1526,6 +1619,14 @@ a[class~="green"]:hover {
 .green-bg {
   background-color: #96c93c !important;
 }
+.green-border {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.green-border:hover,
+.green-border:focus {
+  border: 1px solid #96c93c !important;
+}
 .red {
   color: #ee5362 !important;
 }
@@ -1544,6 +1645,14 @@ a[class~="orange"]:hover {
 .orange-bg {
   background-color: #ec8a68 !important;
 }
+.orange-border {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.orange-border:hover,
+.orange-border:focus {
+  border: 1px solid #ec8a68 !important;
+}
 .purple {
   color: #9c80df !important;
 }
@@ -1552,6 +1661,14 @@ a[class~="purple"]:hover {
 }
 .purple-bg {
   background-color: #9c80df !important;
+}
+.purple-border {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.purple-border:hover,
+.purple-border:focus {
+  border: 1px solid #9c80df !important;
 }
 .border-dark {
   color: #c2d4dc !important;
@@ -1656,6 +1773,11 @@ a[class~="border-light"]:hover {
 }
 .ml20 {
   margin-left: 20px;
+}
+@media (min-width: 768px) {
+  .ml-10 {
+    margin-left: -10px;
+  }
 }
 .p20 {
   padding: 20px;
@@ -2411,6 +2533,11 @@ a[class~="border-light"]:hover {
   padding-top: 8px;
   font-size: 14px;
 }
+.btn.small3 {
+  height: 20px;
+  padding-top: 4px;
+  font-size: 12px;
+}
 .btn.big {
   height: 45px;
   padding-top: 14px;
@@ -2425,6 +2552,10 @@ a[class~="border-light"]:hover {
 .btn.condensed2 {
   padding-left: 13px;
   padding-right: 13px;
+}
+.btn.condensed3 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .btn.icon i {
   display: inline-block;
@@ -2490,6 +2621,16 @@ a[class~="border-light"]:hover {
 .btn.orange:focus,
 .btn.orange:active {
   background-color: #e76e44;
+  color: #ffffff !important;
+}
+.btn.purple {
+  background-color: #9c80df;
+  color: #ffffff !important;
+}
+.btn.purple:hover,
+.btn.purple:focus,
+.btn.purple:active {
+  background-color: #835fd7;
   color: #ffffff !important;
 }
 .btn.gray-light {
@@ -3669,6 +3810,19 @@ div[data-toggle-active].active {
   border-radius: 28px;
   text-align: center;
 }
+.WhiteBox .WhiteBox-Head .billing {
+  position: relative;
+  top: -7px;
+  float: right;
+  background-color: transparent;
+  color: #33b1ed;
+  border: 1px solid #33b1ed;
+}
+.WhiteBox .WhiteBox-Head .billing:hover,
+.WhiteBox .WhiteBox-Head .billing:focus {
+  color: #14a0e3;
+  border: 1px solid #14a0e3;
+}
 @media (max-width: 991px) {
   .WhiteBox .WhiteBox-Body {
     margin-bottom: 20px;
@@ -3678,10 +3832,55 @@ div[data-toggle-active].active {
 .WhiteBox .WhiteBox-Body .Chart2 {
   height: 265px;
 }
+.WhiteBox .WhiteBox-Body select.country {
+  border: none;
+}
 @media (max-width: 767px) {
   .WhiteBox.mobile-center {
     text-align: center;
   }
+}
+@media (min-width: 768px) {
+  .WhiteBox.credit {
+    min-height: 310px;
+  }
+}
+.WhiteBox.back {
+  display: none;
+}
+.WhiteBox.back img {
+  padding-bottom: 30px;
+}
+.WhiteBox .wrapper {
+  text-align: center;
+  background-color: #ffffff;
+}
+@media (max-width: 991px) {
+  .WhiteBox .wrapper {
+    padding: 10px;
+  }
+}
+.WhiteBox .wrapper .box {
+  padding: 60px 30px;
+  border: 1px solid #e3e7ec;
+  border-radius: 5px;
+}
+.WhiteBox .wrapper .box h2 {
+  font-size: 34px;
+  font-weight: 700;
+}
+.WhiteBox .wrapper .box p {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.WhiteBox .wrapper .box a {
+  font-weight: 400;
+}
+.box-toggle.active .front {
+  display: none;
+}
+.box-toggle.active .back {
+  display: block;
 }
 .block-link {
   position: relative;
@@ -5021,6 +5220,66 @@ table.style8 tbody tr:nth-child(even) td {
     font-weight: 600;
   }
 }
+table.style9 {
+  width: 100%;
+  border-radius: 3px;
+  border-collapse: separate;
+}
+@media (max-width: 767px) {
+  table.style9 {
+    border: none;
+  }
+}
+table.style9 thead tr th {
+  color: #8b969c;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #f5f9fc;
+  font-weight: 400;
+  vertical-align: middle;
+  border-bottom: 1px solid #33b1ed;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  table.style9 thead tr th {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  table.style9 thead tr th {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  table.style9 tbody tr {
+    margin-bottom: 1px;
+  }
+}
+table.style9 tbody tr td {
+  position: relative;
+  font-size: 14px;
+  color: #475e6b;
+  padding: 10px;
+  border-top: 1px solid #e3e7ec;
+}
+@media (max-width: 767px) {
+  table.style9 tbody tr td {
+    padding: 10px;
+    white-space: nowrap;
+    border-top: none!important;
+    border-bottom: none!important;
+    border-top: 1px solid #e3e7ec!important;
+  }
+}
+table.style9 tbody tr td p {
+  color: #163543;
+}
+table.style9 tbody tr.br0 td {
+  border: none;
+}
+table.style9 tbody tr.br0 td h5 {
+  font-size: 14px;
+}
 .scroll-h {
   overflow-y: scroll;
 }
@@ -5763,6 +6022,19 @@ table.style8 tbody tr:nth-child(even) td {
   width: 1px;
   background-color: #e3e7ec;
   margin: 5px 10px;
+}
+.TableBox .TableBox-Head .billing {
+  position: relative;
+  top: -7px;
+  float: right;
+  background-color: transparent;
+  color: #33b1ed;
+  border: 1px solid #33b1ed;
+}
+.TableBox .TableBox-Head .billing:hover,
+.TableBox .TableBox-Head .billing:focus {
+  color: #14a0e3;
+  border: 1px solid #14a0e3;
 }
 .btn-group.small .btn {
   height: 27px;
@@ -7146,6 +7418,206 @@ ul.style1 li {
 @media (max-width: 767px) {
   .Administration-8g2 .invoice-preview {
     height: 440px;
+  }
+}
+@media (min-width: 992px) {
+  .management .pad-center {
+    padding-right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .management .pad-center {
+    padding-left: 0;
+  }
+}
+.management .WhiteBox {
+  padding: 25px 30px 45px 30px;
+}
+@media (max-width: 767px) {
+  .management .WhiteBox {
+    margin: 0 15px 20px 15px;
+  }
+}
+.management .WhiteBox .WhiteBox-Head {
+  padding: 0 0 30px 0;
+}
+.management .WhiteBox .WhiteBox-Head h3 {
+  display: inline-block;
+}
+.management .WhiteBox .WhiteBox-Head h4 {
+  float: right;
+  font-size: 15px;
+  color: #8b969c;
+}
+.management .WhiteBox .WhiteBox-Head h4 img {
+  vertical-align: text-top;
+  padding-left: 10px;
+}
+.management .WhiteBox select {
+  height: 30px;
+  width: 85px;
+  border-radius: 30px;
+  background-image: url('/assets/img/select.png');
+  background-position: 80% 50%;
+  color: #9ab1bc;
+}
+.management .TableBox {
+  margin: 0 -10px 20px -10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  .management .TableBox {
+    margin: 20px 15px;
+    padding-bottom: 0;
+  }
+}
+.management .TableBox .manage-users {
+  position: relative;
+}
+.management .TableBox .manage-users:after {
+  content: "Manage Users";
+  position: absolute;
+  top: 6px;
+  right: -90%;
+  height: 20px;
+  width: 85px;
+  padding-top: 4px;
+  font-size: 12px;
+  border-radius: 20px;
+  background-color: #96c93c;
+  color: #ffffff;
+  text-align: center;
+}
+.management .TableBox .TableBox-Head {
+  padding: 30px 20px 30px 30px;
+  background-color: #ffffff;
+}
+.management .TableBox .TableBox-Head h3 {
+  display: inline-block;
+}
+.management .TableBox .TableBox-Body {
+  background-color: #ffffff;
+}
+.management .TableBox .style1 {
+  background-color: transparent;
+}
+.management .TableBox .style1 thead {
+  background-color: #ffffff;
+}
+.management .TableBox .style1 thead tr th {
+  font-size: 20px;
+  color: #163543;
+}
+.management .TableBox .style1 thead tr th .new-iblock {
+  padding: 4px 7px;
+}
+.management .TableBox .style1 thead tr th .new-iblock:hover,
+.management .TableBox .style1 thead tr th .new-iblock:focus {
+  color: #ffffff;
+}
+.management .TableBox .style1 thead tr th .btn.round {
+  background-color: transparent;
+  color: #96c93c;
+  border: 1px solid #96c93c;
+}
+.management .TableBox .style1 thead tr th .btn.round:hover,
+.management .TableBox .style1 thead tr th .btn.round:focus {
+  color: #7fac30;
+  border: 1px solid #7fac30;
+}
+.management .TableBox .style1 tbody tr {
+  background-color: #ffffff;
+}
+.management .TableBox .style1 tbody tr td {
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .management .TableBox .style1 tbody tr td {
+    padding: 10px !important;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .management .TableBox .style1 tbody tr td .ibm {
+    min-width: 100px;
+  }
+}
+.management .TableBox .style1 tbody tr td .email {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 5px;
+  color: #8b969c;
+}
+.management .TableBox .style1 tbody tr td select {
+  height: 30px;
+  width: 85px;
+  border-radius: 30px;
+  background-image: url('/assets/img/select.png');
+  background-position: 80% 50%;
+  color: #9ab1bc;
+}
+@media (max-width: 767px) {
+  .management .TableBox .style1 tbody tr td select {
+    margin: 0 auto;
+  }
+}
+.management .TableBox .style1 tbody tr td p {
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .management .TableBox .style1 tbody tr td p {
+    font-size: 14px;
+  }
+}
+.management .TableBox .style1 tbody tr td .btn.round {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 12px;
+  border: 1px solid #9ab1bc;
+  background-color: transparent;
+  color: #9ab1bc;
+}
+.management .TableBox .style1 tbody tr td .btn.round:hover,
+.management .TableBox .style1 tbody tr td .btn.round:focus {
+  color: #819eac;
+}
+.management .TableBox .style1 tbody tr td:last-child:before {
+  display: none;
+}
+.management .TableBox .style1 tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.management .TableBox .style9 {
+  background-color: transparent;
+}
+.management .TableBox .style9 thead {
+  background-color: #ffffff;
+}
+.management .TableBox .style9 tbody {
+  background-color: #ffffff;
+}
+.management .TableBox table.responsive-centered td:before {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .management .TableBox table tbody {
+    background-color: #ecf2f6;
   }
 }
 /*#endregion */
