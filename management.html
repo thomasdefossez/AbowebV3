@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-    <title>Transat Informatique</title>
+    <title>Circée</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -286,7 +286,6 @@
         <div class="Content">
             <div class="inner">
                 <div class="container">
-
                     <div class="row WhiteBox">                        
                         <div class="WhiteBox-Head">
                             <h3>Payment</h3>
@@ -296,9 +295,13 @@
                             <div class="col-sm-6 col-md-3 wrapper text-center">
                                 <div class="box blue-border">
                                     <h2>0€</h2>
+
                                     <p>less than 10 abonnés</p>
-                                    <a href="#" class="btn smaller condensed">Free</a>
+                                     <button id="customButton" class="btn smaller condensed">Purchase</button>
+                                    
+                                   
                                 </div>
+                               
                             </div>
                             <div class="col-sm-6 col-md-3 wrapper text-center">
                                 <div class="box purple-border">
@@ -1765,6 +1768,7 @@
             <p>Lorem ipsum dolor sit amet, praesent quisque, nibh curabitur felis sociis erat, dis dui, fusce egestas, posuere amet ultricies vitae diam varius.</p>
         </div>
     </div>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
 
     <script src="assets/lib/jquery/jquery-2.1.4.min.js"></script>
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
@@ -1777,6 +1781,34 @@
     <script src="assets/lib/daterangepicker/daterangepicker.js"></script>
     <script src="assets/lib/rotate/jQueryRotate.js"></script>
     <script src="assets/js/script.js"></script>
+   <script>
+var handler = StripeCheckout.configure({
+  key: 'pk_test_lMEEmhaFNk7x8Otk3HBSnhvp',
+  image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+  locale: 'auto',
+  token: function(token) {
+    // You can access the token ID with `token.id`.
+    // Get the token ID to your server-side code for use.
+  }
+});
+
+document.getElementById('customButton').addEventListener('click', function(e) {
+  // Open Checkout with further options:
+  handler.open({
+    name: 'POLARIS NEWS',
+    description: '2 widgets',
+    zipCode: true,
+    currency: 'eur',
+    amount: 2000
+  });
+  e.preventDefault();
+});
+
+// Close Checkout on page navigation:
+window.addEventListener('popstate', function() {
+  handler.close();
+});
+</script>
 
 </body>
 </html>
