@@ -19,8 +19,6 @@
 </head>
 <body class="Abonnements-Creer-Reabo-Serie">
 
-
-
     <header class="MainHeader">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -171,7 +169,8 @@
                     </header>
                     <ul>
                         <li><a href="#">Lonely Planet</a></li>
-                       
+                        <li><a href="#">Marie Claire</a></li>
+                        <li><a href="#">Tous les titres</a></li>
                     </ul>
                 </section>
                 <ul class="menu">
@@ -387,15 +386,85 @@
                             </div>
                         </div>
                     </div>
-                   
-                    <div class="row mb20 bb pb10">
-                        
-                        
-                    </div>
+                    <div class="col-sm-12">
 
 
+                        <div class="row mb20">
+                        <div class="col-sm-12">
+                            <div class="InfoOpenBox">
+                                <a class="info-btn" href="#" data-toggle-active="TopInfoBox"></a>
+                                <div class="info-box" data-toggle-active="TopInfoBox">
+                                    <form class="table"> 
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw blue tu fs12 pt20 pb5">
+                                                Option CNIl
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                                Créer les factures
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <div class="pl5">
+                                                    <input type="checkbox" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                               Regrouper par client
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <div class="pl5">
+                                                    <input type="checkbox" checked />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                               Solder les factures
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <div class="pl5">
+                                                    <input type="checkbox" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                               Date automatique
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <div class="pl5">
+                                                    <input type="checkbox" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div class="table-row">
+                                            <div class="cell-m wsnw gray pr20 h30">
+                                              Conserver Mode paiement
+                                            </div>
+                                            <div class="cell-m-100">
+                                                <div class="pl5">
+                                                    <input type="checkbox" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
 
-                    <div class="row mb20">
+                            <h1 class="ibm tu">Réabonnement en série</h1>
+                            <a open-popup="TiersPayant"  href="#" class="ibm fs20 ml10">HUMANITE QUOTIDIEN - 22438 - 31/05/2018</a>
+                           
+                        </div>
+                         <div class="row mb20 bb pb10">
+                   		
+                    </div>	
+
+                 
+
+                      <div class="row mb20">
                         <div class="col-sm-12">
                             <div class="WhiteBox">
                                 <div class="row">
@@ -411,12 +480,19 @@
                                                         <label for="type1">Abonnements échus à réabonner</label>
                                                     </div>
                                                 </div>
+                                                 <div class="row mb10">
+                                                    <div class="col-sm-12">
+                                                        <input type="radio" class="round" name="type" id="type1" />
+                                                        <label for="type1">Abonnements SEPA à réabonner</label>
+                                                    </div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col-sm-12">
                                                         <input type="radio" class="round" name="type" id="type2" />
-                                                        <label for="type2">Abonnements prélevés à réabonner</label>
+                                                        <label for="type2">Abonnements CB à réabonner</label>
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -443,8 +519,170 @@
                                                     <input type="checkbox" id="Option1">
                                                     <label for="Option1">Sans les abonnements gratuits</label>
                                                 </div>
+                                                 <div class="mb30">
+                                                    <input type="checkbox" id="Option1">
+                                                    <label for="Option1">Exclure les tarifs non relancabless</label>
+                                                </div>
                                                 <div class="pt20">
                                                     <a href="#" class="btn gray-light small condensed">Calculer</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mb20">
+
+                        <div class="col-sm-12">
+                            <div class="WhiteBox">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="header pt10 pb10">
+                                            <h5>Informations générales</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3 text-center pt20 pb40">
+                                        <span class="fs48 blue">4</span>
+                                        <p class="fs16 pt10 pl20 pr20">Nb de clients à réabo.</p>
+                                    </div>
+                                    <div class="col-sm-3 text-center pt20 pb40">
+                                        <span class="fs48 blue">2</span>
+                                        <p class="fs16 pt10 pl20 pr20">Nb d’abonnements à réabo.</p>
+                                    </div>
+                                    <div class="col-sm-3 text-center pt20 pb40">
+                                        <span class="fs48 blue">0</span>
+                                        <p class="fs16 pt10 pl20 pr20">Nb d’abonnements avec un tarif de réabo.</p>
+                                    </div>
+                                    <div class="col-sm-3 text-center pt20 pb40">
+                                        <span class="fs48 blue">2</span>
+                                        <p class="fs16 pt10 pl20 pr20">Nb d’abonnements sans un tarif de réabo.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="table whiter-bg br3">
+                                            <div class="cell-t-60 br bt bb">
+                                                <div class="p20">
+                                                    <h5 class="pb20 pt20 gray fw600">Les réabonnements créés auront pour tarif :</h5>
+                                                    <ul class="style1">
+                                                        <li>Le tarif de réabonnement du tarif d’abonnement</li>
+                                                        <li>Le tarif de l’ abonnement échu si le tarif de réabonnement n’a pas été précisé</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="cell-t-40 bt bb">
+                                                <div class="table white-bg fs16 gray br3">
+                                                    <div class="table-row">
+                                                        <div class="cell-m pt15 pr0 pb15 pl20 bb">Montant HT total du réabonnement :</div>
+                                                        <div class="cell-m pt15 pr20 pb15 pl0 bb text-right">24,39€</div>
+                                                    </div>
+            
+                                                    <div class="table-row">
+                                                        <div class="cell-m pt15 pr0 pb15 pl20 gray-light-bg white">Montant TTC total du réabonnement :</div>
+                                                        <div class="cell-m br3br pt15 pr20 pb15 pl0 gray-light-bg white fs20 bold text-right">24,90€</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="p20">
+                                            <div class="row mb10">
+                                                <div class="col-sm-6 pt13 gray">
+                                                    Date d’ordre des réabonnements
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-icon right">
+                                                        <input type="text" data-type="date" value="04/09/2015">
+                                                        <i class="flaticon stroke calendar-1 border-dark"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb10">
+                                                <div class="col-sm-6 pt13 gray">
+                                                    Date de facturation
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-icon right">
+                                                        <input type="text" data-type="date" value="04/09/2015">
+                                                        <i class="flaticon stroke calendar-1 border-dark"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb20">
+                                                <div class="col-sm-6 pt13 gray">
+                                                    Echéance facture
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-icon right">
+                                                        <input type="text" data-type="date" value="04/09/2015">
+                                                        <i class="flaticon stroke calendar-1 border-dark"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb20">
+                                                <div class="col-sm-6 pt13 gray">
+                                                    Date du reglement
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-icon right">
+                                                        <input type="text" data-type="date" value="04/09/2015">
+                                                        <i class="flaticon stroke calendar-1 border-dark"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="p20">
+                                        	
+                                            <div class="row mb10">
+                                                <div class="col-sm-4 pt13 gray">
+                                                    Mode de paiement
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <select>
+                                                        <option>Cheque</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb10">
+                                                <div class="col-sm-4 pt13 gray">
+                                                    Banque émettrice
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <select>
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb10">
+                                                <div class="col-sm-4 pt13 gray">
+                                                    N° de chèque
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="row mb10">
+                                                <div class="col-sm-4 pt13 gray">
+                                                    CS Réglement
+                                                </div>
+                                                 <div class="col-sm-8">
+                                                    <select>
+                                                        <option></option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
@@ -454,158 +692,14 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <table class="style4 responsive">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            <div class="checkbox-wrapper">
-                                                <input type="checkbox" />
-                                            </div>
-                                        </th>
-                                        <th>Code<i class="caret gray"></i></th>
-                                        <th class="blue">Date<i class="caret up"></i></th>
-                                        <th>Client<i class="caret gray"></i></th>
-                                        <th>Titre<i class="caret gray"></i></th>
-                                        <th>Facture<i class="caret gray"></i></th>
-                                        <th>Tarif<i class="caret gray"></i></th>
-                                        <th>Pns<i class="caret gray"></i></th>
-                                        <th>Dns<i class="caret gray"></i></th>
-                                        <th>Ex<i class="caret gray"></i></th>
-                                        <th>
-                                            <div class="tool-box down">
-                                                <a href="#" class="gray-light fs10 mr5">
-                                                    <i class="flaticon solid pencil-2"></i>
-                                                </a>
-                                                <ul>
-                                                    <li><a href="#">Info</a></li>
-                                                    <li><a href="#">Autres</a></li>
-                                                </ul>
-                                            </div>
-                                            Info<i class="caret gray"></i>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th><i class="flaticon stroke zoom-2 border-dark"></i></th>
-                                        <th><input type="text" class="sl smaller" /></th>
-                                        <th><input type="text" class="sl smaller" /></th>
-                                        <th><input type="text" class="sl smaller" /></th>
-                                        <th><input type="text" class="sl smaller" /></th>
-                                        <th><input type="text" class="sl smaller" /></th>
-                                        <th><input type="text" class="sl smaller" /></th>
-                                        <th><input type="text" class="sl smaller" /></th>
-                                        <th><input type="text" class="sl smaller" /></th>
-                                        <th><input type="text" class="sl smaller" /></th>
-                                        <th><input type="text" class="sl smaller" /></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td><a href="#">#487</a></td>
-                                        <td>28 Février 2013</td>
-                                        <td><a href="contact-detail.html">Dominic Cruz</a></td>
-                                        <td>Test Magazine</td>
-                                        <td>F3100246</td>
-                                        <td>TA001</td>
-                                        <td>2</td>
-                                        <td>2</td>
-                                        <td>1</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td><a href="#">#487</a></td>
-                                        <td>28 Février 2013</td>
-                                        <td><a href="contact-detail.html">Barthelemy Chalvet</a></td>
-                                        <td>Test Magazine</td>
-                                        <td>F3100246</td>
-                                        <td>TA001</td>
-                                        <td>2</td>
-                                        <td>2</td>
-                                        <td>1</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td><a href="#">#487</a></td>
-                                        <td>28 Février 2013</td>
-                                        <td><a href="contact-detail.html">Marine Legrand</a></td>
-                                        <td>Test Magazine</td>
-                                        <td>F3100246</td>
-                                        <td>TA001</td>
-                                        <td>2</td>
-                                        <td>2</td>
-                                        <td>1</td>
-                                        <td>NF/NR</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td><a href="#">#487</a></td>
-                                        <td>28 Février 2013</td>
-                                        <td><a href="contact-detail.html">Simone Grieu</a></td>
-                                        <td>Test Magazine</td>
-                                        <td>F3100246</td>
-                                        <td>TA001</td>
-                                        <td>2</td>
-                                        <td>2</td>
-                                        <td>1</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td><a href="#">#487</a></td>
-                                        <td>28 Février 2013</td>
-                                        <td><a href="contact-detail.html">John Smith</a></td>
-                                        <td>Test Magazine</td>
-                                        <td>F3100246</td>
-                                        <td>TA001</td>
-                                        <td>2</td>
-                                        <td>2</td>
-                                        <td>1</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td><a href="#">#487</a></td>
-                                        <td>28 Février 2013</td>
-                                        <td><a href="contact-detail.html">John Smith</a></td>
-                                        <td>Test Magazine</td>
-                                        <td>F3100246</td>
-                                        <td>TA001</td>
-                                        <td>2</td>
-                                        <td>2</td>
-                                        <td>1</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td><a href="#">#487</a></td>
-                                        <td>28 Février 2013</td>
-                                        <td><a href="contact-detail.html">John Smith</a></td>
-                                        <td>Test Magazine</td>
-                                        <td>F3100246</td>
-                                        <td>TA001</td>
-                                        <td>2</td>
-                                        <td>2</td>
-                                        <td>1</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
                 </div>
             </div>
             <div class="footer">
                 <div class="container">
                     <div class="text-right">
                         <a href="#" class="btn gray-lighter fw400 condensed mr25 xs-small xs-mr5">Cancel</a>
-                        <a href="abonnements-serie-3.html" class="btn green icon condensed xs-small xs-mr5"><i class="flaticon stroke checkmark-1 hidden-xs"></i>Valider</a>
-                        <div class="separator ml15 mr15 hidden-xs"></div>
-                        <a href="#" class="btn round gray-light hidden-xs"><i class="flaticon stroke calculator-1"></i></a>
+                        <a href="#" open-popup="ReabonnementValidation" class="btn green condensed xs-small xs-mr5">Réabonner</a>
+                        <a href="#" open-popup="ReabonnementValidation" class="btn green condensed xs-small xs-mr5">Planifier Tache</a>
                     </div>
                 </div>
             </div>
@@ -1678,6 +1772,18 @@
                     <button close-popup="" type="submit" class="btn green icon condensed"><i class="flaticon stroke checkmark-1"></i>Valider</button>
                 </div>
             </form>
+        </div>
+        <div popup="ReabonnementValidation" class="w500">
+            <div class="popup-main-content">
+                <div class="pt40 pb30 text-center">
+                    <i class="budicon web-warningwarnalert orange fs64 mb40"></i>
+                    <h3>You are about to re-suscribe <b>118</b> contacts</h3>
+                </div>
+            </div>
+            <div class="popup-main-footer">
+                <a href="#" close-popup="" class="btn gray-lighter condensed mr10">Cancel</a>
+                <a href="#" close-popup="" class="btn green icon condensed"><i class="flaticon stroke checkmark-1"></i>Réabonner</a>
+            </div>
         </div>
     </div>
 
